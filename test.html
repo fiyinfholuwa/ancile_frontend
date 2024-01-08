@@ -1,0 +1,138 @@
+<div class="progressContainer">
+    <ul class="progress">
+      <li class="progress__item progress__item--completed">
+    
+        <p class="progress__info">Upload your qualifications & 
+            other documents</p>
+      </li>
+      <li class="progress__item progress__item--active">
+        <p class="progress__info">Counsellor Advise
+            On the best for your career path.</p>
+      </li>
+      <li class="progress__item">
+        <p class="progress__info">Application Starts
+            Based on your choice of universities.</p>
+      </li>
+      <li class="progress__item">
+        <p class="progress__info">Successful! 
+            We assist with your Visa process.</p>
+      </li>
+    
+    </ul>
+  
+  </div>
+
+
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700");
+
+p {
+  font-size: 13px;
+  margin: 0 0 11px;
+}
+
+
+.progressContainer {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 2rem;
+  color: #fff;
+  background: #392a60;
+  -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.progress {
+  position: relative;
+  padding: 0 1rem 0 3.5rem;
+  margin: 2rem 0 0;
+  list-style: none;
+}
+
+.progress__item {
+  position: relative;
+  min-height: 75px;
+  counter-increment: list;
+  padding-left: 0.5rem;
+}
+.progress__item:before {
+  content: "";
+  position: absolute;
+  left: -1.5rem;
+  top: 33px;
+  height: 60%;
+  width: 1px;
+  border-left: 1px solid #fff;
+}
+.progress__item:after {
+  content: counter(list);
+  position: absolute;
+  top: 0;
+  left: -2.5rem;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: transparent;
+  color: #fff;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 2rem;
+  text-align: center;
+  border: 1px solid #fff;
+}
+.progress__item:last-child:before {
+  border: none;
+}
+.progress__item.progress__item--completed {
+  opacity: 0.6;
+  color: #fff;
+}
+.progress__item.progress__item--completed:after {
+  content: "\2713";
+  font-weight: 400;
+  background: #fff;
+  color: #392a60;
+}
+.progress__item.progress__item--active:after {
+  background: #fff;
+  color: #392a60;
+}
+
+.progress__title {
+  padding: 0.4rem 0 0.5rem;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.progress__info {
+  font-size: 13px;
+}
+
+  </style>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+  const steps = document.querySelectorAll('.progress__item');
+
+  let currentStep = 0;
+
+  function updateProgress() {
+    setInterval(() => {
+      steps.forEach((step) => {
+        step.classList.remove('progress__item--completed');
+      });
+
+      steps[currentStep].classList.add('progress__item--completed');
+      currentStep = (currentStep + 1) % steps.length;
+    }, 2000); // Adjust the duration as needed (in milliseconds)
+  }
+
+  updateProgress(); // Start the progress update
+});
+
+</script>
