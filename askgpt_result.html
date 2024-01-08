@@ -12,24 +12,51 @@
   </head>
   <body>
     <section class="nav_nav">
-      <nav>
-        <input id="nav-toggle" type="checkbox">
-      <!-- 	<div class="logo">MINZ<strong>CODE</strong></div> -->
-        <ul class="links">
-          <li><a href="#home">Programs & Courses</a></li>
-          <li><a href="#about">Study Destination</a></li>
-          <li><a href="#work">Resources</a></li>
-          <li><a href="#projects">FAQ</a></li>
-          <li><a href="#contact">Services</a></li>
-          <li><a href="#contact">About</a></li>
-          <li><a id="btn_consultation" href="#contact">Free Consultation</a></li>
-        </ul>
-        <label for="nav-toggle" class="icon-burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </label>
-      </nav>
+      <header class="header">
+        <!-- <a href="#" class="header__logo">Clay</a> -->
+
+        <i class='bx bx-menu header__toggle' id="header-toggle"></i>
+
+        <nav class="nav" id="nav-menu">
+            <div class="nav__content bd-grid">
+                <a href="" class="nav__perfil">
+                    <!-- <div class="nav__img">
+                        <img src="assets/img/perfil.jpg" alt="">
+                    </div>
+                     -->
+                    <!-- <div>
+                        <span class="nav__name">Clay</span>
+                        <span class="nav__name">Mitchell</span>
+                    </div> -->
+                </a>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link active">Programs & Courses</a></li>
+
+                        <li class="nav__item dropdown">
+                            <a href="#" class="nav__link dropdown__link">Study Destination <i class='bx bx-chevron-down dropdown__icon'></i></a>
+                                
+
+                            <ul class="dropdown__menu">
+                                <li class="dropdown__item"><a href="#" class="nav__link">United States</a></li>
+                                <li class="dropdown__item"><a href="#" class="nav__link">United Kingdom</a></li>
+                                <li class="dropdown__item"><a href="#" class="nav__link">Canada</a></li>
+                                <li class="dropdown__item"><a href="#" class="nav__link">Australia</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link bg_nav">Free Consultation</a></li>
+
+                      
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
       <div class="after_nav row">
         <div class="col-lg-6 col-md-6 left">
           <img src="assets/image/AncileAcad-logo.svg"/>
@@ -49,7 +76,7 @@
       </div>
       <div class="row">
         <div class="col-lg-7">
-          <h1 class="header">Getting Started</h1>
+          <h1 class="headers">Getting Started</h1>
 
           <div class="q_a">
             <h1>What is Study Abroad?</h1>

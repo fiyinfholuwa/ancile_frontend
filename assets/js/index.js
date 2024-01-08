@@ -68,3 +68,5 @@ function togglePasswordVisibility1() {
     updateProgress(); // Start the progress update
   });
   
+
+  
