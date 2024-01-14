@@ -1,0 +1,398 @@
+@media only screen and (max-width:87.0625em) {
+
+
+  .help h2 {
+    width: 80%;
+  }
+
+  .help-box {
+    width: 30%;
+  }
+
+
+  .home-box {
+    align-items: center;
+  }
+
+  .home h3 {
+    width: 100%;
+    font-size: 5.5rem;
+  }
+
+  .testimonial {
+    width: 30%;
+  }
+
+  .testimonial-img {
+    width: 100%;
+  }
+
+  .testimonial h3 {
+    margin-left: -5rem;
+  }
+
+  .testimony-profile {
+    margin-left: -5rem;
+  }
+
+  .footer-quest h3 {
+    font-size: 3rem;
+  }
+
+  .footer-quest h4 {
+    font-size: 4rem;
+  }
+
+  .hero-text {
+    width: 45%;
+  }
+
+  .home img {
+    width: 15rem;
+  }
+
+}
+
+@media only screen and (max-width:75em) {
+  .nav-list {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    right: 0;
+    background-color: #2857b3;
+    transition: all 300ms ease;
+    z-index: 1000;
+  }
+
+  .submenu {
+    position: relative;
+    margin-top: -444rem;
+    background-color: transparent;
+    padding: 0;
+    border-radius: none;
+  }
+
+  /* .menu:hover>.submenu {
+    margin-top: 0;
+    transition: all 300ms ease;
+  } */
+
+  .menu:focus.submenu {
+    margin-top: 0;
+    transition: all 300ms ease;
+  }
+
+  .submenu li a {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+
+  .submenu li {
+    margin-top: 3rem;
+  }
+
+  .submenu li:not(:last-child) {
+    margin-bottom: 0rem;
+  }
+
+  .second-nav {
+    margin-top: 7rem;
+  }
+
+  .nav-list.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin-right: 0;
+  }
+
+  .nav-list li:not(:last-child) {
+    margin-bottom: 4rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+
+  .login {
+    margin-bottom: 2rem;
+    margin-right: 0;
+    padding: 1.5rem 9rem;
+
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  #menu-icon i.active:before {
+    content: '\f00d';
+    color: #1C0C2A;
+    margin-right: 50%;
+  }
+}
+
+@media only screen and (max-width:69.0625em) {
+
+  section,
+  footer {
+    padding: 0rem 4rem 5rem 4rem;
+    overflow-x: hidden;
+  }
+
+  nav {
+    padding: 3rem 4rem;
+  }
+
+  .second-nav {
+    padding: 3rem 8rem;
+    padding-top: 5rem;
+  }
+
+  footer {
+    padding-bottom: 8rem;
+    padding-top: 8rem;
+  }
+
+  .help-container {
+    justify-content: space-between;
+  }
+
+  .help-box {
+    width: 32%;
+  }
+
+  .gain h2 {
+    width: 100%;
+    font-size: 3.5rem;
+  }
+
+  .destination-para {
+    width: 50%;
+  }
+
+  .home h3 {
+    font-size: 4rem;
+    letter-spacing: 0;
+    line-height: 6rem;
+    margin-top: 5rem;
+  }
+
+  .testimonial h3 {
+    font-size: 2.5rem;
+    margin-left: 0;
+  }
+
+  #help {
+    margin-top: 10rem;
+  }
+
+  .second-nav img {
+    width: 15%;
+  }
+}
+
+@media only screen and (max-width:62.375em) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .hero h1 {
+    letter-spacing: 0;
+    font-size: 5.8rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .help h2 {
+    width: 100%;
+  }
+
+  .help-box {
+    padding: 4rem 2rem;
+  }
+
+  .explore {
+    width: 40%;
+  }
+
+  .slick-slide {
+    margin-right: 8rem;
+  }
+
+  .slick-slide img {
+    width: 118%;
+  }
+}
+
+@media only screen and (max-width:55.375em) {
+  .second-nav {
+    padding: 3rem 3rem;
+    padding-top: 5rem;
+  }
+
+  .nav-auth a:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  .help-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .explore {
+    width: 70%;
+  }
+
+  .help-box {
+    width: 50%;
+  }
+
+  .destination {
+    flex-direction: column;
+  }
+
+  .destination-header {
+    width: 100%;
+  }
+
+  .destination-para {
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .home-box {
+    flex-direction: column;
+  }
+
+  .home {
+    width: 100%;
+  }
+
+  .home-img {
+    display: none;
+  }
+
+  .testimonial-box {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .testimonial {
+    width: 50%;
+  }
+
+  .course-box {
+    align-items: unset;
+  }
+
+  .course {
+    width: 32%;
+    padding: 2rem;
+  }
+
+  .course a {
+    font-size: 1.8rem;
+  }
+
+  .footer-quest h3 {
+    font-size: 2rem;
+  }
+
+  .footer-quest h4 {
+    font-size: 2.5rem;
+  }
+
+  .read-container {
+    margin-top: 7rem;
+  }
+}
+
+@media only screen and (max-width:43.6875em) {
+  .hero h1 {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .nav-search {
+    border-right: none;
+  }
+
+  /* .nav-profile {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  } */
+
+  .second-nav img {
+    width: 13rem;
+  }
+
+  .nav-auth a {
+    font-size: 1.4rem;
+  }
+
+  .hero p {
+    font-size: 2rem;
+  }
+
+  .hero img {
+    width: 100%;
+  }
+
+  .help-box {
+    width: 90%;
+  }
+
+  .gain h2 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+  }
+
+  .destination-header h3 {
+    font-size: 3.4rem;
+  }
+
+  .testimonial {
+    width: 80%;
+  }
+
+  .course a {
+    font-size: 1.4rem;
+  }
+
+  .footer-quest img {
+    width: 5rem;
+  }
+
+  .read-link {
+    flex-wrap: wrap;
+  }
+
+  .footer-box1 {
+    gap: 0;
+  }
+}
+
+@media only screen and (max-width:31.8125em) {
+  html {
+    font-size: 50%;
+  }
+}
