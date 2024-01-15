@@ -20,7 +20,7 @@
           <li class="nav-item menu"><a href="#" class="nav-linkss">Study Destination
               <i class="fa-solid fa-caret-down"></i></a>
             <ul class="submenu">
-              <li class="sublink"><a href="#" class="submenu-link"><img src="assets/image/us-hdr.jpg"
+              <li class="sublink"><a href="#help" class="submenu-link"><img src="assets/image/us-hdr.jpg"
                     alt="">Neumorphism</a></li>
               <li class="sublink"><a href=" #" class="submenu-link"><img src="assets/image/us-hdr.jpg"
                     alt="">Neumorphism</a></li>
@@ -112,7 +112,7 @@
             Content here, content here
           </div>
         </div>
-        <div class="place-container">
+        <!-- <div class="place-container">
           <div class="place-box">
             <img src="assets/image/Mask Group 57.jpg" alt="">
             <div class="place-number">
@@ -148,6 +148,36 @@
               <p>Australia</p>
             </div>
           </div>
+        </div> -->
+        <div class="place-containerr">
+          <div class="place-boxx">
+            <!-- <img src="assets/image/Mask Group 57.jpg" alt=""> -->
+            <div class="place-numberr">
+              <h5>01</h5>
+              <p>United States</p>
+            </div>
+          </div>
+          <div class="place-boxx">
+            <!-- <img src="assets/image/Mask Group 57.jpg" alt=""> -->
+            <div class="place-numberr">
+              <h5>02</h5>
+              <p>Canada</p>
+            </div>
+          </div>
+          <div class="place-boxx">
+            <!-- <img src="assets/image/Mask Group 57.jpg" alt=""> -->
+            <div class="place-numberr">
+              <h5>03</h5>
+              <p>Australia</p>
+            </div>
+          </div>
+          <div class="place-boxx">
+            <!-- <img src="assets/image/Mask Group 57.jpg" alt=""> -->
+            <div class="place-numberr">
+              <h5>04</h5>
+              <p>United Kingdom</p>
+            </div>
+          </div>
         </div>
         <div class="place-explore">
           <a href="#">Explore More</a>
@@ -158,14 +188,38 @@
     <section>
       <div class="home-box">
         <div class="home">
-          <img src="assets/image/study-ic.svg" alt="">
-          <h3>
-            Your Next
-            Home Could
-            Be Abroad
-          </h3>
+          <div class="home-text">
+            <img src="assets/image/study-ic.svg" alt="">
+            <h3>
+              Your Next
+              Home Could
+              Be Abroad
+            </h3>
+          </div>
+
+          <ul class="step-item">
+            <li class="active">
+              <p>Upload your qualifications &
+                other documents</p>
+            </li>
+            <li>
+              <h5>Counsellor Advise
+              </h5>
+              <p>On the best for your career path.</p>
+            </li>
+            <li>
+              <h5>Application Starts</h5>
+              <p>Based on your choice of universities.</p>
+            </li>
+            <li>
+              <h5>Successful!</h5>
+              <p>We assist with your Visa process.</p>
+
+            </li>
+          </ul>
           <div class="home-btn">
-            <a href="#">See the Steps</a>
+            <a href="#" id="see">See the Steps</a>
+            <a href="https://myreceipt.com.ng/" id="start">Start application</a>
           </div>
         </div>
         <img src="assets/image/study-img.jpg" alt="" class="home-img">
@@ -368,29 +422,22 @@
       }
     });
 
-    //Animation on scroll........................
-    ScrollReveal({ distance: "60px", duration: 2000, delay: 400 });
+    const switchBtn = document.querySelector('.home-btn')
+    const see = document.getElementById("see");
+    const start = document.getElementById("start");
+    const homeText = document.querySelector(".home-text");
+    const stepItem = document.querySelector(".step-item");
 
-    ScrollReveal().reveal(".hero-img, .hero", {
-      delay: 100,
-      origin: "right",
-      // interval: 500,
-      duration: 2200,
-      distance: "50px",
+    switchBtn.addEventListener("click", function () {
+      if (event.target.id === "see")
+        event.preventDefault();
+
+      homeText.style.display = "none";
+      stepItem.style.display = "block";
+      start.style.display = 'inline-block';
+      see.style.display = 'none'
+
     });
 
-    ScrollReveal().reveal(".destination", {
-      delay: 110,
-      origin: "right",
-      interval: 600,
-      duration: 2200,
-    });
-
-    ScrollReveal().reveal(".course", {
-      delay: 110,
-      origin: "bottom",
-      interval: 500,
-      duration: 2200,
-    });
   </script>
 </html>
