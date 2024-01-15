@@ -94,7 +94,7 @@ nav {
 }
 
 .submenu li a {
-  font-size: 1.6rem;
+  font-size: 12px;
 }
 
 .submenu li:not(:last-child) {
@@ -140,7 +140,7 @@ li {
 .nav-link,
 .nav-linkss {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -152,7 +152,7 @@ li {
 }
 
 .buttons a {
-  font-size: 1.8rem;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -165,7 +165,7 @@ li {
 }
 
 .second-nav {
-  background-color: #2f5cbd35;
+  /* background-color: #2f5cbd35; */
   margin-top: 9rem;
   padding: 2rem 8rem;
   display: flex;
@@ -830,6 +830,7 @@ footer {
 .image-background {
   width: 100%;
   overflow-x: hidden;
+
 }
 
 
@@ -888,4 +889,7 @@ footer {
 .place-numberr p {
   font-size: 2.5rem;
   margin-top: 1.5rem;
+
+  /* height: 90vh !important; */
+  overflow-y: hidden;
 }

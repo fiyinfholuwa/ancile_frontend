@@ -1,401 +1,400 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/shakur.css">
+    <link rel="stylesheet" href="assets/css/salman.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <script src="https://kit.fontawesome.com/c6614d5790.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Academy Frontend</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/index.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
   </head>
   <body>
-    <section class="nav_nav">
-      <header class="header">
-        <!-- <a href="#" class="header__logo">Clay</a> -->
+    <header>
+      <nav class="nav-section">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#" class="nav-link">Programs & Courses</a></li>
+          <li class="nav-item menu"><a href="#" class="nav-linkss">Study Destination
+              <i class="fa-solid fa-caret-down"></i></a>
+            <ul class="submenu">
+              <li class="sublink"><a href="#" class="submenu-link"><img src="assets/image/us-hdr.jpg"
+                    alt="">United States</a></li>
+              <li class="sublink"><a href=" #" class="submenu-link"><img src="assets/image/uk-hdr.jpg"
+                    alt="">United Kingdom</a></li>
+              <li class="sublink"><a href=" #" class="submenu-link"><img src="assets/image/can-hdr.jpg"
+                    alt="">Canada</a></li>
+                    <li class="sublink"><a href=" #" class="submenu-link"><img src="assets/image/aus-hdr.jpg"
+                      alt="">Australia</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
 
-        <i class='bx bx-menu header__toggle' id="header-toggle"></i>
+          <div class="buttons">
+            <a href="app" class="login">Free Consultation</a>
+          </div>
+        </ul>
 
-        <nav class="nav" id="nav-menu">
-          <div class="nav__content bd-grid">
-            <a href="" class="nav__perfil">
-              <!-- <div class="nav__img">
-                        <img src="assets/img/perfil.jpg" alt="">
-                    </div>
-                     -->
-              <!-- <div>
-                        <span class="nav__name">Clay</span>
-                        <span class="nav__name">Mitchell</span>
-                    </div> -->
-            </a>
-
-            <div class="nav__menu">
-              <ul class="nav__list">
-                <li class="nav__item"><a href="#" class="nav__link active">Programs & Courses</a></li>
-
-                <li class="nav__item dropdown">
-                  <a href="#" class="nav__link dropdown__link">Study Destination
-                    <i class='bx bx-chevron-down dropdown__icon'>
-                    </i>
-                  </a>
-                  <ul class="dropdown__menu">
-                    <li class="dropdown__item"><a href="#" class="nav__link">United Kingdom</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">Canada</a></li>
-                    <li class="dropdown__item"><a href="#" class="nav__link">Australia</a></li>
-                  </ul>
-                </li>
-
-                <li class="nav__item"><a href="#" class="nav__link">FAQ</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">Services</a></li>
-                <li class="nav__item"><a href="#" class="nav__link">About</a></li>
-                <li class="nav__item"><a href="#" class="nav__link bg_nav">Free Consultation</a></li>
+        <div id="menu-icon" class="nav-link">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+      </nav>
 
 
-              </ul>
+      <div class="second-nav">
+        <img src="assets/image/AncileAcad-logo.svg" alt="">
+        <div class="nav-profile">
+          <i class="fa-solid fa-xmark iconn"></i>
+          <div class="search-box">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="input-box">
+              <input type="text" placeholder="Search...">
             </div>
           </div>
-        </nav>
-      </header>
-      <div class="after_nav row">
-        <div class="col-lg-6 col-md-6 left">
-          <img src="assets/image/AncileAcad-logo.svg" />
-        </div>
-        <div class="col-lg-6 col-md-6 right">
-          <div>
-            <span><i class="fa fa-search"></i></span> <span>|</span> <span><img src="assets/image/imagee.jpg" /></span>
-            <h3>Olasope Daramola<br />Sign Out</h3></span>
+          <div class="nav-auth">
+            <a href="#">Sign up</a>
+            <a href="#">Login</a>
           </div>
         </div>
       </div>
-      <section>
-
-        <section class="home_top">
-          <div class="top">
-            <div class="row">
-              <div class="col-lg-6 col-md-6 left">
-                <h1>
-                  Explore <br />
-                  Boundless <br />
-                  Horizons
-                </h1>
-                <p>Your Gateway to Global Education Opportunities</p>
-                <div class="link_wrap">
-                  <a href="">Get started</a>
-                </div>
-              </div>
-              <div class="col-lg-6 col-md-6 right">
-                <div class="image_wrap">
-                  <img src="assets/image/headr-img.jpg" />
-                </div>
-              </div>
+      <div class="hero">
+        <div class="hero-text">
+          <h1>Explore Boundless Horizons</h1>
+          <p>Your Gateway to Global Education Opportunities</p>
+          <div class="hero-buttons">
+            <a href="#" class="login2">Get Started</a>
+          </div>
+        </div>
+        <img src="assets/image/headr-img.jpg" alt="hero-image" class="hero-img">
+      </div>
+    </header>
+    <section id="help">
+      <div class="help">
+        <h2>We help students get admission into amazing universities around the world.</h2>
+        <div class="help-container">
+          <div class="help-box study">
+            <p class="explore">Explore
+              Programs,
+              Study
+              Abroad</p>
+            <a href="#" class="find">Find a course</a>
+          </div>
+          <div class="help-box">
+            <img src="assets/image/ic-doc.svg" alt="">
+            <p class="start">Start <br> Your Application</p>
+            <a href="#" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+          <div class="help-box">
+            <img src="assets/image/ic-doc.svg" alt="">
+            <p class="start">Start <br> Your Application</p>
+            <a href="#" class="arrow"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="gain">
+        <h2>Gain access to a vast network of reputable educational institutions and travel partners around the world.
+        </h2>
+        <p class="tag">Popular</p>
+        <div class="destination">
+          <div class="destination-header">
+            <h3>Study
+              Destinations</h3>
+          </div>
+          <div class="destination-para">
+            It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its
+            layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as
+            opposed to using
+            Content here, content here
+          </div>
+        </div>
+        <div class="place-container">
+          <div class="place-box">
+            <img src="assets/image/Mask Group 57.jpg" alt="">
+            <div class="place-number">
+              <h5>01</h5>
+              <p>United States</p>
             </div>
           </div>
-
-          <div class="about">
-            <h3>We help students get admission into
-              amazing universities around the world.</h3>
-            <div class="row cards">
-              <div class="col-lg-4">
-                <div class="card content1">
-                  <h2>Explore <br />
-                    Programs, <br />
-                    Study<br />
-                    Abroad</h2>
-                  <div class="link_wrap">
-                    <a href="">Find a course</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class=" col-lg-4">
-                <div class="card content2">
-                  <img src="assets/image/ic-doc.svg">
-
-                  <h5>Start<br />
-                    Your Application</h5>
-                  <a><i class="fa fa-arrow-right"></i></a>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="card content3">
-
-                  <img src="assets/image/talk-connect.svg">
-                  <h5>Get Free <br />
-                    Consultation</h5>
-                  <a><i class="fa fa-arrow-right"></i></a>
-                </div>
-              </div>
+          <div class="place-box">
+            <img src="assets/image/Mask Group 60.jpg" alt="">
+            <div class="place-number">
+              <h5>02</h5>
+              <p>Canada</p>
             </div>
           </div>
-          <div class="travel">
-            <h3>Gain access to a vast
-              network of reputable educational
-              institutions and travel partners
-              around the world.</h3>
-
-            <div class="row">
-              <div class="col-lg-7 t_left">
-                <span>Popular</span>
-                <h1>Study <br />
-                  Destinations</h1>
-              </div>
-              <div class="col-lg-5 t_right">
-                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
-                  looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                  distribution of letters, as opposed to using ‘Content here, content here</p>
-              </div>
-            </div>
-
-            <div class="row states">
-              <div class="col-lg-3 col-md-6 state">
-                <img src="assets/image/Mask Group 57.jpg" />
-                <div class="inner_d">
-                  <h1>01</h1>
-                  <p>United States</p>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 state">
-                <img src="assets/image/Mask Group 60.jpg" />
-                <div class="inner_d">
-                  <h1>02</h1>
-                  <p>Canada</p>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 state">
-                <img src="assets/image/Mask Group 58.jpg" />
-                <div class="inner_d">
-                  <h1>03</h1>
-                  <p>Australia</p>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-6 state">
-                <img src="assets/image/Mask Group 59.jpg" />
-                <div class="inner_d">
-                  <h1>04</h1>
-                  <p>United Kingdom</p>
-                </div>
-              </div>
+          <div class="place-box">
+            <img src="assets/image/Mask Group 58.jpg" alt="">
+            <div class="place-number">
+              <h5>03</h5>
+              <p>Australia</p>
             </div>
           </div>
-          <div class="row status_change">
-            <div class="col-lg-6 col-md-6  s_left">
-              <div class="c_wrap">
-                <img src="assets/image/study-ic.svg" />
-                <h1>
-                  Your Next <br />
-                  Home Could <br />
-                  Be Abroad
-                </h1>
-
-                <button>See the Steps</button>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 s_right">
-              <img src="assets/image/study-img.jpg" />
+          <div class="place-box">
+            <img src="assets/image/Mask Group 59.jpg" alt="">
+            <div class="place-number">
+              <h5>05</h5>
+              <p>United Kingdom</p>
             </div>
           </div>
-
-          <div class="image_walk">
-            <img src="assets/image/imagee.jpg" />
+          <div class="place-box">
+            <img src="assets/image/Mask Group 58.jpg" alt="">
+            <div class="place-number">
+              <h5>06</h5>
+              <p>Australia</p>
+            </div>
           </div>
+        </div>
+        <div class="place-explore">
+          <a href="#">Explore More</a>
+        </div>
+
+      </div>
+    </section>
+    <section>
+      <div class="home-box">
+        <div class="home">
+          <img src="assets/image/study-ic.svg" alt="">
+          <h3>
+            Your Next
+            Home Could
+            Be Abroad
+          </h3>
+          <div class="home-btn">
+            <a href="#">See the Steps</a>
+          </div>
+        </div>
+        <img src="assets/image/study-img.jpg" alt="" class="home-img">
+      </div>
+    </section>
+
+    <div class="image-background">
+      <img src="assets/image/imagee.jpg" alt="">
+    </div>
+    <section>
+      <div class="testimonial-container">
+
+        <h2>Our Student’s Stories</h2>
+        <div class="testimonial-box">
+          <div class="testimonial">
+            <img src="assets/image/Mask Group 57.jpg" alt="" class="testimonial-img">
+            <h3>Amanda Priyanka</h3>
+            <div class="testimony-profile">
+              <img src="assets/image/Mask Group 58.jpg" class="testy-img" /> <span>United States</span>
+            </div>
+
+          </div>
+
 
           <div class="testimonial">
-            <h2>Our Student’s Stories</h2>
-            <div class="row">
-              <div class="col-lg-4 col-md-6 content">
-                <div class="inner_image">
-                  <img class="main" src="assets/image/Mask Group 57.jpg" />
-                  <img class="play_icon" src="assets/image/study-img.jpg" />
-                </div>
-                <div class="outer_image">
-                  <h4>Amanda Priyanka</h4>
-                  <img src="assets/image/Mask Group 58.jpg" /> <span>United States</span>
-                </div>
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-
-              </div>
-
-              <div class="col-lg-4 col-md-6">
-
-              </div>
-
+            <img src="assets/image/Mask Group 60.jpg" alt="" class="testimonial-img">
+            <h3>Mira Aditi</h3>
+            <div class="testimony-profile">
+              <img src="assets/image/Mask Group 58.jpg" class="testy-img" /> <span>United States</span>
             </div>
+
           </div>
-
-
-
-
-
-          <div class="popular_courses">
-            <h2>Popular <br>
-              Courses</h2>
-            <div class="row">
-              <div class="col-lg-4">
-                <div class="content">
-                  <p>Accounting</p>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="content">
-                  <p>Engineering</p>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="content">
-                  <p>Computer <br>
-                    Sciences And IT</p>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="content">
-                  <p>Health and Medicine</p>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="content">
-                  <p>Languages</p>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="content">
-                  <p>Education</p>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="content">
-                  <p>Law and Legal Studies</p>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="content">
-                  <p>Art and <br>
-                    Design</p>
-                </div>
-              </div>
-
-              <div class="col-lg-4">
-                <div class="content">
-                  <p>Media, Marketing and <br>
-                    Communication</p>
-                </div>
-              </div>
-
+          <div class="testimonial">
+            <img src="assets/image/Mask Group 57.jpg" alt="" class="testimonial-img">
+            <h3>Amanda Priyanka</h3>
+            <div class="testimony-profile">
+              <img src="assets/image/Mask Group 58.jpg" class="testy-img" /> <span>United States</span>
             </div>
-          </div>
-        </section>
-
-        <section class="footer">
-          <div class="row">
-            <div class="col-lg-6 col-md-6">
-              <img src="assets/image/quest.svg" />
-              <h3>Questions?</h3>
-              <h4>AskOurGPT</h4>
-            </div>
-            <div class="col-lg-6 col-md-6">
-              <img src="assets/image/footer-signal.svg" />
-              <h3>Guide</h3>
-              <h4>Available Counsellor</h4>
-            </div>
-          </div>
-          <div class="next_footer">
-            <div class="row">
-              <div class="col-lg-6 col-md-6 left">
-                <span><a>Programs & Courses</a></span>
-                <span><a>Services</a></span>
-                <span><a>Resources</a></span>
-                <span><a>Blogs</a></span>
-              </div>
-              <div class="col-lg-6 col-md-6 right">
-                <span><a><i class="fab fa-facebook"></i></a></span>
-                <span><a><i class="fab fa-twitter"></i></a></span>
-                <span><a><i class="fab fa-linkedin"></i></a></span>
-                <span><a><i class="fab fa-instagram"></i></a></span>
-              </div>
-            </div>
-          </div>
-          <div class="footer_about">
-            <p>Ancile Academy is an educational travel consultancy creating a diverse range of opportunities that allows
-              students to travel to their dream universities from students and parents to educators and institutions,
-              while showcasing the value and impact of experiential learning through travel.</p>
 
           </div>
-          <div class="footer_bottom">
-            <p>2023 © Ancile Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="course-container">
+        <h2>Popular Courses</h2>
+        <div class="course-box">
+          <div class="course">
+            <a href="#">
+              Accounting
+            </a>
           </div>
-        </section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-          crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-          integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-          crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-          integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-          crossorigin="anonymous"></script>
+          <div class="course">
+            <a href="#">
+              Engineering
+            </a>
+          </div>
+          <div class="course">
+            <a href="#">
+              Computer Sciences And IT
+            </a>
+          </div>
+        </div>
+        <div class="course-box">
+          <div class="course">
+            <a href="#">
+              Health and Medicine
+            </a>
+          </div>
+          <div class="course">
+            <a href="#">
+              Languages
+            </a>
+          </div>
+          <div class="course">
+            <a href="#">
+              Education
+            </a>
+          </div>
+        </div>
+        <div class="course-box">
+          <div class="course">
+            <a href="#">
+              Law and Legal Studies
+            </a>
+          </div>
+          <div class="course">
+            <a href="#">
+              Art and 
+Design
+            </a>
+          </div>
+          <div class="course">
+            <a href="#">
+              Media, Marketing and 
+Communication
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-box1">
+        <div class="footer-quest">
+          <img src="assets/image/quest.svg" />
+          <h3>Questions?</h3>
+          <h4>AskOurGPT</h4>
+        </div>
+        <div class="footer-quest">
+          <img src="assets/image/footer-signal.svg" />
+          <h3>Guide</h3>
+          <h4>Available Counsellor</h4>
+        </div>
+      </div>
+      <div class="read-container">
+        <div class="read-link">
+          <a href="#">Programs & Courses</a>
+          <a href="#">Services</a>
+          <a href="#">Resources</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="read-social">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-parag">
+        <p class="parag-text">Ancile Academy is an educational travel consultancy creating a diverse range of
+          opportunities that allows
+          students to
+          travel to their dream universities from students and parents to educators and institutions, while showcasing
+          the value
+          and impact of experiential learning through travel.</p>
+        <p class="copy">2023 © Ancile Inc. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
-
   <script>
-    // Simulate progress change using JavaScript
-    document.addEventListener("DOMContentLoaded", function () {
-      const progressItems = document.querySelectorAll('.progress__item');
-
-      let currentStep = 0;
-
-      function updateProgress() {
-        setInterval(() => {
-          progressItems.forEach((item) => {
-            item.classList.remove('progress__item--active');
-          });
-
-          progressItems[currentStep].classList.add('progress__item--active');
-          currentStep = (currentStep + 1) % progressItems.length;
-        }, 2000); // Change the duration as needed (in milliseconds)
-      }
-
-      updateProgress(); // Start the progress update
+    $(".place-container").slick({
+      infinite: false,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 3,
+      infinite: true,
+      responsive: [
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+          },
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },],
     });
 
-    /*===== EXPANDER MENU  =====*/
-    const showMenu = (toggleId, navId) => {
-      const toggle = document.getElementById(toggleId),
-        nav = document.getElementById(navId)
+    const header = document.querySelector(".nav-section");
+    const elements = document.querySelector(".nav-list");
+    const menu = document.querySelectorAll(".nav-link");
+    const sublink = document.querySelectorAll('.sublink')
+    const icon = document.querySelector("#menu-icon i");
 
-      if (toggle && nav) {
-        toggle.addEventListener('click', () => {
-          nav.classList.toggle('show')
-          toggle.classList.toggle('bx-x')
-        })
+    menu.forEach((element) => {
+      element.addEventListener("click", () => {
+        elements.classList.toggle("active");
+        icon.classList.toggle("active");
+      });
+    });
+    sublink.forEach((element) => {
+      element.addEventListener("click", () => {
+        elements.classList.toggle("active");
+        icon.classList.toggle("active");
+      });
+    });
+
+    let searchBox = document.querySelector(".search-box .fa-solid.fa-magnifying-glass");
+    let search = document.querySelector('.nav-profile')
+    console.log(searchBox)
+    searchBox.addEventListener("click", () => {
+      search.classList.toggle("showInput");
+      if (search.classList.contains("showInput")) {
+        searchBox.classList.replace("fa-solid.fa-magnifying-glass", "fa-solid.fa-xmark");
+      } else {
+        searchBox.classList.replace("fa-solid.fa-xmark", "fa-solid.fa-magnifying-glass");
       }
-    }
-    showMenu('header-toggle', 'nav-menu')
+    });
 
-    /*===== ACTIVE AND REMOVE MENU =====*/
-    const navLink = document.querySelectorAll('.nav__link');
+    //Animation on scroll........................
+    ScrollReveal({ distance: "60px", duration: 2000, delay: 400 });
 
-    function linkAction() {
-      /*Active link*/
-      navLink.forEach(n => n.classList.remove('active'));
-      this.classList.add('active');
-    }
-    navLink.forEach(n => n.addEventListener('click', linkAction));
+    ScrollReveal().reveal(".hero-img, .hero", {
+      delay: 100,
+      origin: "right",
+      // interval: 500,
+      duration: 2200,
+      distance: "50px",
+    });
 
+    ScrollReveal().reveal(".destination", {
+      delay: 110,
+      origin: "right",
+      interval: 600,
+      duration: 2200,
+    });
+
+    // ScrollReveal().reveal(".course", {
+    //   delay: 20,
+    //   origin: "bottom",
+    //   interval: 200,
+    //   duration: 200,
+    // });
   </script>
 </html>
