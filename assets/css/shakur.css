@@ -144,7 +144,7 @@ li {
 .nav-link,
 .nav-linkss {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
@@ -161,7 +161,7 @@ li {
 }
 
 .buttons a {
-  font-size: 1.8rem;
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -667,7 +667,7 @@ li {
   position: absolute;
   width: 1px;
   height: calc(100% - 92px);
-  left: 2rem;
+  left: 4rem;
   top: 1.5rem;
   background-color: #89acf0;
   margin-top: 20px;
@@ -922,6 +922,7 @@ footer {
 .image-background {
   width: 100%;
   overflow-x: hidden;
+
 }
 
 
@@ -980,4 +981,7 @@ footer {
 .place-numberr p {
   font-size: 2.5rem;
   margin-top: 1.5rem;
+
+  /* height: 90vh !important; */
+  overflow-y: hidden;
 }
