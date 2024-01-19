@@ -598,6 +598,7 @@ li {
 .home-box {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   gap: 5rem;
   margin-top: 8rem;
   margin-bottom: 8rem;
@@ -641,6 +642,8 @@ li {
   font-size: 2rem;
   padding: 1.6rem 4rem;
   border-radius: 10rem;
+  display: inline-block;
+  margin-bottom: 5rem;
 }
 
 .home-text {
@@ -666,9 +669,9 @@ li {
   content: '';
   position: absolute;
   width: 1px;
-  height: calc(100% - 92px);
+  height: calc(100% - 22%);
   left: 4rem;
-  top: 1.5rem;
+  top: 1.9rem;
   background-color: #89acf0;
   margin-top: 20px;
   /* z-index: -1; */
