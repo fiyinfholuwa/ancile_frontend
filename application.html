@@ -5,10 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/shakur.css">
     <link rel="stylesheet" href="assets/css/salman.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
     <link rel="stylesheet" href="assets/css/application.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" type="text/css"
-      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
     <script src="https://kit.fontawesome.com/c6614d5790.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Academy Frontend</title>
@@ -93,9 +92,9 @@
               <input type="text" id="mail" name="mail" placeholder="xyz@email.com">
             </div>
             <div class="first-input">
-              <label for="number">Mobile Number</label>
+              <label for="phone">Mobile Number</label>
               <!-- <input type="text" placeholder="MM/DD/YYYY" onfocus="(this.type='date')"> -->
-              <input type="tel" id="number" name="number" placeholder="+234 &nbsp;(XXX) XXXX - XXXX">
+              <input type="tel" id="phone" type="tel" name="phone">
             </div>
           </div>
         </div>
@@ -250,4 +249,18 @@
       </div>
     </footer>
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+  <script>
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+    });
+
+    const iti = window.intlTelInput(input, {
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+      initialCountry: "ng", // "ng" is the ISO country code for Nigeria
+    });
+
+
+  </script>
 </html>
