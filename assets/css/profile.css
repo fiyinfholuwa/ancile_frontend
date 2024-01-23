@@ -73,6 +73,7 @@
   background-color: #080808;
   padding: 1.8rem 3rem;
   border-radius: 4rem;
+  text-decoration: none !important;
 }
 
 .profile-container {
@@ -200,6 +201,10 @@
   margin-bottom: 25rem;
 }
 
+.completed-content h2 {
+  margin-bottom: 3rem;
+}
+
 .all-content-div h2,
 .completed-content h2,
 .cancel-content h2 {
@@ -222,6 +227,68 @@
   margin-top: 3rem;
 }
 
-.completed-list-name {
-  background-color: #080808;
+.completed-list {
+  /* opacity: 0.4; */
+  border-radius: 5px;
+  /* border: solid 0.5px #edf1f6; */
+  background-color: rgba(238, 240, 246, 0.213);
+  padding: 5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.completed-list-name h4 {
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0d0c0c !important;
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.completed-list-name p {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  font-size: 1.4rem;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0d0c0c;
+}
+
+.completed-list-percent {
+  display: flex;
+  align-items: center;
+}
+
+.completed-list-percent h3 {
+  margin-right: 13rem;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-align: left;
+  color: #1a77e5;
+  font-size: 5.5rem;
+}
+
+.completed-list-percent a {
+  border-radius: 50px;
+  border: solid 1px #000;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  padding: 1.2rem 5rem;
+  font-size: 1.4rem;
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 6rem;
 }

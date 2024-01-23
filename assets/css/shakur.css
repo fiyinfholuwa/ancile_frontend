@@ -67,7 +67,7 @@ nav {
  
   transition: all 100ms ease;
   display: none; */
-  left: 0px;
+  left: -40px;
   margin-top: 10px !important;
   top: calc(100% + 30px);
   margin: 0;
@@ -75,6 +75,7 @@ nav {
   opacity: 0;
   visibility: hidden;
   background: #fff;
+  width: 150%;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   padding: 2rem;
@@ -99,6 +100,22 @@ nav {
 
 .submenu li a {
   font-size: 1.2rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0f0e0e;
+}
+
+.submenu li {
+  transition: all .2s;
+}
+
+.submenu li:hover {
+  padding: 7px 6.5px 6.5px 15px;
+  border-radius: 5px;
+  background-color: #e6e6e6;
 }
 
 .submenu li:not(:last-child) {
@@ -589,7 +606,7 @@ li {
   background-color: #000000;
   color: #fff;
   font-size: 1.8rem;
-  padding: 2.2rem 5rem;
+  padding: 1.5rem 4rem;
   border-radius: 10rem;
   text-align: center;
 }
@@ -598,14 +615,14 @@ li {
 .home-box {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  /* align-items: flex-start; */
   gap: 5rem;
   margin-top: 8rem;
   margin-bottom: 8rem;
 }
 
 .home {
-  width: 50%;
+  width: 53%;
   background-color: #2857b3;
   color: #fff;
   border-radius: 20px;
@@ -629,7 +646,7 @@ li {
 }
 
 .home-img {
-  width: 50%;
+  width: 46%;
 }
 
 .home-btn {
@@ -640,7 +657,7 @@ li {
   background-color: #000000;
   color: #fff;
   font-size: 2rem;
-  padding: 1.6rem 4rem;
+  padding: 1.5rem 4rem;
   border-radius: 10rem;
   display: inline-block;
   margin-bottom: 5rem;
@@ -746,18 +763,35 @@ li {
 .play-btn {
   position: absolute;
   top: 28%;
-  left: 30%;
+  left: 40%;
   z-index: 1;
   width: 10rem;
 }
 
+.modal-body {
+  padding: 0;
+  width: 150%;
+  margin-left: -20%;
+}
+
 .testimonial {
-  width: 35%;
+  width: 30%;
   position: relative;
 }
 
+.testimonial-img {
+  width: 100%;
+}
+
 .testimonial h3 {
-  font-size: 3rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.76;
+  letter-spacing: normal;
+  text-align: left;
+  color: #0f0e0e;
   text-align: center;
   margin-left: -8rem;
   margin-top: 2rem;
@@ -923,11 +957,13 @@ footer {
 
 
 .image-background {
-  width: 100%;
-  overflow-x: hidden;
 
+  overflow-x: hidden;
 }
 
+.image-background img {
+  width: 100%;
+}
 
 /* PLAYGROUND */
 .place-containerr {
