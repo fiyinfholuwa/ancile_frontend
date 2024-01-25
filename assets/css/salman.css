@@ -11,10 +11,10 @@
 
 
 
-  .home h3 {
+  /* .home h3 {
     width: 100%;
     font-size: 5.5rem;
-  }
+  } */
 
   .testimonial {
     width: 30%;
@@ -44,9 +44,9 @@
     width: 45%;
   }
 
-  .home img {
+  /* .home img {
     width: 15rem;
-  }
+  } */
 
 }
 
