@@ -33,7 +33,7 @@ footer {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .modal-content {
@@ -45,10 +45,10 @@ nav {
   display: flex;
   align-items: center;
   justify-content: end;
-  padding: 3rem 10rem;
-  padding-bottom: 2rem;
+  padding: 2rem 10rem;
+  padding-bottom: 1rem;
   background-color: #2f5dbd;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
@@ -196,7 +196,7 @@ li {
 
 .second-nav {
   background-color: #f0f5ff;
-  margin-top: 9rem;
+  /* margin-top: 7rem; */
   padding: 2rem 8rem;
   display: flex;
   align-items: center;
@@ -615,7 +615,7 @@ li {
 .home-box {
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-start; */
+  align-items: center;
   gap: 5rem;
   margin-top: 8rem;
   margin-bottom: 8rem;
@@ -623,6 +623,7 @@ li {
 
 .home {
   width: 53%;
+  height: 850px;
   background-color: #2857b3;
   color: #fff;
   border-radius: 20px;
@@ -678,7 +679,7 @@ li {
 /* PLAYGROUND .......*/
 .step-item {
   position: relative;
-  margin-top: 10rem;
+  margin-top: 6rem;
   display: none;
 }
 
