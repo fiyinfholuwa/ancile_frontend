@@ -55,7 +55,7 @@
     position: fixed;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     height: 100vh;
     top: 0;
@@ -66,12 +66,22 @@
     z-index: 1000;
   }
 
+  .nav-list li,
+  .buttons {
+    padding-left: 5rem;
+  }
+
   .submenu {
-    position: relative;
-    margin-top: -444rem;
+    position: initial;
     background-color: transparent;
+    box-shadow: none;
     padding: 0;
     border-radius: none;
+    display: none;
+  }
+
+  .submenu li {
+    padding-left: 0 !important;
   }
 
   /* .menu:hover>.submenu {
@@ -79,9 +89,13 @@
     transition: all 300ms ease;
   } */
 
-  .menu:focus.submenu {
+  /* .menu:focus.submenu {
     margin-top: 0;
     transition: all 300ms ease;
+    display: block;
+  } */
+  .submenu.active {
+    display: block;
   }
 
   .submenu li a {
@@ -97,9 +111,6 @@
     margin-bottom: 0rem;
   }
 
-  .second-nav {
-    margin-top: 7rem;
-  }
 
   .nav-list.active {
     left: 0;
@@ -133,7 +144,7 @@
 
   #menu-icon i.active:before {
     content: '\f00d';
-    color: #1C0C2A;
+    color: #fff;
     margin-right: 50%;
   }
 }
@@ -155,9 +166,17 @@
     padding-top: 5rem;
   }
 
+  .hero {
+    margin-top: 5rem;
+  }
+
   footer {
     padding-bottom: 8rem;
     padding-top: 8rem;
+  }
+
+  .home img {
+    margin-left: 50%;
   }
 
   .help-container {
@@ -196,6 +215,53 @@
   .second-nav img {
     width: 15%;
   }
+
+
+  /* ABOUT PAGE .............................................................................*/
+
+  .about-head-left {
+    width: 50%;
+  }
+
+  .about-head-right {
+    width: 40%;
+  }
+
+  .together-header {
+    width: 50%;
+  }
+
+  .together-header h2 {
+    font-size: 4.5rem;
+  }
+
+  .together-box img {
+    width: 40%;
+  }
+
+  .success {
+    width: 25%;
+    text-align: center;
+  }
+
+  .success h3,
+  .success p {
+    text-align: center;
+  }
+
+  .offer-header {
+    width: 70%;
+  }
+
+  .offer {
+    width: 31%;
+    padding: 4rem 2rem;
+  }
+
+  .question-parag {
+    width: 50%;
+  }
+
 }
 
 @media only screen and (max-width:62.375em) {
@@ -240,6 +306,22 @@
 }
 
 @media only screen and (max-width:55.375em) {
+  .hero-text {
+    margin-bottom: 7rem;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .hero h1 {
+    text-align: center !important;
+  }
+
+  .hero p {
+    text-align: center !important;
+  }
+
   .second-nav {
     padding: 3rem 3rem;
     padding-top: 5rem;
@@ -256,6 +338,16 @@
 
   .explore {
     width: 70%;
+  }
+
+  .place-containerr {
+    flex-direction: column;
+    align-items: center;
+    gap: 7rem;
+  }
+
+  .place-boxx {
+    width: 60%;
   }
 
   .help-box {
@@ -281,6 +373,12 @@
 
   .home {
     width: 100%;
+    height: auto;
+  }
+
+  .home-image-box {
+    width: 80%;
+
   }
 
   .home-img {
@@ -296,6 +394,12 @@
     width: 50%;
   }
 
+  .modal-body {
+    padding: 0;
+    width: 120%;
+    margin-left: -15%;
+  }
+
   .course-box {
     align-items: unset;
   }
@@ -306,7 +410,7 @@
   }
 
   .course a {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .footer-quest h3 {
@@ -319,6 +423,97 @@
 
   .read-container {
     margin-top: 7rem;
+  }
+
+  /* ABOUT PAGE .............................................................................*/
+  .about-page {
+    flex-direction: column;
+  }
+
+  .about-head-left {
+    width: 100%;
+  }
+
+  .about-head-right {
+    width: 100%;
+  }
+
+  .together-container {
+    flex-direction: column;
+  }
+
+  .together-header {
+    width: 100%;
+  }
+
+  .together-header-text {
+    width: 100%;
+  }
+
+  .together-box {
+    flex-direction: column;
+  }
+
+  .together-box img {
+    width: 80%;
+  }
+
+  .together-mission {
+    width: 100%;
+  }
+
+  .together-vision img {
+    width: 22rem;
+  }
+
+  .offer p {
+    text-align: center;
+  }
+
+  .question-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .question-parag {
+    width: 100%;
+  }
+
+  .question-container img {
+    width: 80%;
+  }
+
+  #success {
+    margin-top: 0;
+  }
+
+  .together-box img {
+    width: 100%;
+  }
+
+  .together-vision img {
+    width: 22rem;
+  }
+
+  .success-box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .success {
+    width: 50%;
+  }
+
+  .offer-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .offer {
+    width: 80%;
+    padding: 4rem;
   }
 }
 
@@ -337,6 +532,13 @@
     align-items: center;
     gap: 1rem;
   } */
+  ul {
+    padding-left: 0 !important;
+  }
+
+  .step-item::after {
+    left: 2rem;
+  }
 
   .second-nav img {
     width: 13rem;
@@ -348,14 +550,34 @@
 
   .hero p {
     font-size: 2rem;
+    line-height: normal;
   }
 
   .hero img {
     width: 100%;
   }
 
+  .help h2 {
+    font-size: 3rem;
+  }
+
   .help-box {
     width: 90%;
+  }
+
+  .home-image-box {
+    width: 100%;
+    height: 700px;
+  }
+
+  .modal-body iframe {
+    height: 300px !important;
+  }
+
+  .modal-body {
+    padding: 0;
+    width: 100%;
+    margin-left: 0;
   }
 
   .gain h2 {
@@ -369,6 +591,17 @@
 
   .testimonial {
     width: 80%;
+  }
+
+  .course-box {
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    gap: 3rem;
+  }
+
+  .course {
+    width: 100%;
   }
 
   .course a {
@@ -386,10 +619,43 @@
   .footer-box1 {
     gap: 0;
   }
+
+  .search-box .input-box input {
+    width: 90%;
+  }
+
+  .search-box .input-box {
+    width: 250px;
+  }
+
+  /* ABOUT PAGE .............................................................................*/
+  .offer-header {
+    width: 100%;
+  }
+
+  .offer {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width:31.8125em) {
   html {
     font-size: 50%;
+  }
+
+  .place-boxx {
+    width: 100%;
+  }
+
+  .home-image-box {
+    height: 500px;
+  }
+
+  .hero h1 {
+    margin-bottom: 2rem;
+  }
+
+  .home img {
+    margin-left: 20%;
   }
 }
