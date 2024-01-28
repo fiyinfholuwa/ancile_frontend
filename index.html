@@ -19,7 +19,7 @@
       <nav class="nav-section">
         <ul class="nav-list">
           <li class="nav-item"><a href="findcourse2.html" class="nav-link">Programs & Courses</a></li>
-          <li class="nav-item menu"><a href="#" class="nav-linkss">Study Destination
+          <li class="nav-item menu" id="toggleSubMenu"><a href="#" class="nav-linkss">Study Destination
               <i class="fa-solid fa-caret-down"></i></a>
             <ul class="submenu">
               <li class="sublink"><a href="#help" class="submenu-link"><img src="assets/image/us-hdr.jpg" alt="">United
@@ -253,7 +253,10 @@
             <a href="https://myreceipt.com.ng/" id="start">Start application</a>
           </div>
         </div>
-        <img src="assets/image/study-img.jpg" alt="" class="home-img">
+        <div class="home-image-box">
+          <!-- <img src="assets/image/study-img.jpg" alt="" class="home-img"> -->
+        </div>
+
       </div>
     </section>
 
@@ -518,7 +521,11 @@
       stepItem.style.display = "block";
       start.style.display = 'inline-block';
       see.style.display = 'none'
+    });
 
+    document.getElementById('toggleSubMenu').addEventListener('click', function () {
+      document.querySelector('.submenu').classList.toggle('active');
+      elements.style.paddingTop = '70px'
     });
 
   </script>
