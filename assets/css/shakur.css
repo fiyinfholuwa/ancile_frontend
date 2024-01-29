@@ -173,6 +173,10 @@ li {
   color: #fff !important;
 }
 
+.nav-link:visited {
+  color: #fff !important;
+}
+
 .buttons {
   margin-left: 5rem;
 }
