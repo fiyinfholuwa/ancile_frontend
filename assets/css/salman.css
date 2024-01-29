@@ -262,6 +262,14 @@
     width: 50%;
   }
 
+  /* TIPS PAGE .............................................................................*/
+  .tips-banner {
+    width: 60%;
+  }
+
+  .tips-step p {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width:62.375em) {
@@ -302,6 +310,16 @@
 
   .slick-slide img {
     width: 118%;
+  }
+
+  /* RESOURCES PAGE.................................................. */
+  .resource h3 {
+    font-size: 1.6rem;
+  }
+
+  .resource-download a {
+    padding: 1.4rem 4rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -515,6 +533,86 @@
     width: 80%;
     padding: 4rem;
   }
+
+  /* TIPS PAGE .............................................................................*/
+  .tips-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tips-banner {
+    width: 80%;
+  }
+
+  .tips-container a {
+    margin-top: 3rem;
+  }
+
+  /* RESOURCES PAGE .............................................................................*/
+  .resource-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .resource {
+    width: 60%;
+  }
+
+  .resource-download {
+    justify-content: center;
+  }
+
+  .resource h3 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .resource-download a {
+    padding: 1.9rem 5rem;
+  }
+
+  /* ASK GPT PAGE .............................................................................*/
+  .gpt-container a {
+    width: 31%;
+    padding: 4rem 2rem;
+  }
+
+  .gpt-container a img {
+    width: 4rem;
+  }
+
+  .ask-container h2 {
+    text-align: center;
+  }
+
+  .ask-container input {
+    width: 50%;
+  }
+
+  .ask-container {
+    margin-top: 5rem;
+  }
+
+  /* FIND COURSE PAGE .............................................................................*/
+  .find-course {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .find-course select {
+    width: 45%;
+    margin-right: 0;
+  }
+
+  .find-course button {
+    margin-left: 0;
+  }
+
+  .bachelor p {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width:43.6875em) {
@@ -525,6 +623,16 @@
 
   .nav-search {
     border-right: none;
+  }
+
+  .nav-profile-name h3 {
+    font-size: 1.4rem;
+    line-height: 4.5rem;
+  }
+
+
+  .nav-profile {
+    gap: 1.5rem;
   }
 
   /* .nav-profile {
@@ -616,9 +724,9 @@
     flex-wrap: wrap;
   }
 
-  .footer-box1 {
+  /* .footer-box1 {
     gap: 0;
-  }
+  } */
 
   .search-box .input-box input {
     width: 90%;
@@ -636,11 +744,30 @@
   .offer {
     width: 100%;
   }
+
+  .gpt-container {
+    gap: 3rem;
+  }
+
+  .gpt-container a {
+    width: 33%;
+  }
+
+  .gpt-container h6 {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-width:31.8125em) {
   html {
     font-size: 50%;
+  }
+
+  .nav-profile-details {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
   }
 
   .place-boxx {
@@ -657,5 +784,57 @@
 
   .home img {
     margin-left: 20%;
+  }
+
+
+
+  /* RESOURCES PAGE .............................................................................*/
+
+  .resource {
+    width: 100%;
+  }
+
+  .bsc-duration-box {
+    flex-wrap: wrap;
+  }
+
+  /* ASK GPT PAGE .............................................................................*/
+  .ask-container h2 {
+    font-size: 3rem;
+  }
+
+  .ask-container input {
+    width: 90%;
+  }
+
+  .gpt-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gpt-container a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .gpt-container a img {
+    width: 7rem;
+
+  }
+
+  .gpt-container h6 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  /* FIND COURSE PAGE .............................................................................*/
+
+
+  .find-course select {
+    width: 65%;
   }
 }
