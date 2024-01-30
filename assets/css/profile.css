@@ -61,6 +61,10 @@
   display: none;
 }
 
+.profile-btn {
+  display: none;
+}
+
 .profile-btn a {
   font-size: 1.5rem;
   font-weight: 500;
@@ -281,7 +285,6 @@
   border-radius: 50px;
   border: solid 1px #000;
   font-weight: bold;
-  font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
   text-align: left;
@@ -291,4 +294,9 @@
   text-decoration: none;
   display: inline-block;
   margin-right: 6rem;
+}
+
+.track {
+  background-color: #000;
+  color: #fff !important;
 }

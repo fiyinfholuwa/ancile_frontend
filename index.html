@@ -181,34 +181,62 @@
           </div>
         </div> -->
         <div class="place-containerr">
-          <div class="place-boxx">
-            <!-- <img src="assets/image/Mask Group 57.jpg" alt=""> -->
-            <div class="place-numberr">
-              <h5>01</h5>
-              <p>United States</p>
+          <a href="#" class="place-boxx">
+            <div>
+              <!-- <img src="assets/image/Mask Group 57.jpg" alt=""> -->
+              <div class="place-numberr">
+                <h5>01</h5>
+                <p>United States</p>
+              </div>
             </div>
-          </div>
-          <div class="place-boxx">
-            <!-- <img src="assets/image/Mask Group 57.jpg" alt=""> -->
-            <div class="place-numberr">
-              <h5>02</h5>
-              <p>Canada</p>
+          </a>
+          <a href="#" class="place-boxx">
+            <div>
+              <!-- <img src="assets/image/Mask Group 57.jpg" alt=""> -->
+              <div class="place-numberr">
+                <h5>02</h5>
+                <p>Canada</p>
+              </div>
             </div>
-          </div>
-          <div class="place-boxx">
-            <!-- <img src="assets/image/Mask Group 57.jpg" alt=""> -->
-            <div class="place-numberr">
-              <h5>03</h5>
-              <p>Australia</p>
+          </a>
+          <a href="#" class="place-boxx">
+            <div>
+              <!-- <img src="assets/image/Mask Group 57.jpg" alt=""> -->
+              <div class="place-numberr">
+                <h5>03</h5>
+                <p>Australia</p>
+              </div>
             </div>
-          </div>
-          <div class="place-boxx">
-            <!-- <img src="assets/image/Mask Group 57.jpg" alt=""> -->
-            <div class="place-numberr">
-              <h5>04</h5>
-              <p>United Kingdom</p>
+          </a>
+          <a href="#" class="place-boxx">
+            <div>
+              <!-- <img src="assets/image/Mask Group 57.jpg" alt=""> -->
+              <div class="place-numberr">
+                <h5>04</h5>
+                <p>United Kingdom</p>
+              </div>
             </div>
-          </div>
+          </a>
+        </div>
+        <div class="place-containerr place-con place-hide">
+          <a href="#" class="place-boxx">
+            <div>
+              <!-- <img src="assets/image/Mask Group 57.jpg" alt=""> -->
+              <div class="place-numberr">
+                <h5>04</h5>
+                <p>Island</p>
+              </div>
+            </div>
+          </a>
+          <a href="#" class="place-boxx">
+            <div>
+              <!-- <img src="assets/image/Mask Group 57.jpg" alt=""> -->
+              <div class="place-numberr">
+                <h5>05</h5>
+                <p>United Kingdom</p>
+              </div>
+            </div>
+          </a>
         </div>
         <div class="place-explore">
           <a href="#">Explore More</a>
@@ -528,5 +556,13 @@
       elements.style.paddingTop = '70px'
     });
 
+    const exploreBtn = document.querySelector('.place-explore')
+    const con = document.querySelector('.place-con')
+
+    exploreBtn.addEventListener('click', function (e) {
+      e.preventDefault()
+      con.classList.remove('place-hide')
+      exploreBtn.style.display = 'none'
+    })
   </script>
 </html>

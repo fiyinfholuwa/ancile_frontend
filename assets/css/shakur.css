@@ -208,7 +208,7 @@ li {
 }
 
 .second-nav img {
-  width: 10%;
+  width: 12%;
 }
 
 .nav-profile {
@@ -309,7 +309,7 @@ li {
 
 .nav-auth a {
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 500;
   font-stretch: normal;
   font-style: normal;
   letter-spacing: normal;
@@ -339,8 +339,8 @@ li {
   letter-spacing: normal;
   text-align: left;
   color: #080808;
-  line-height: 6rem;
-  margin-bottom: -1rem;
+  /* line-height: 6rem; */
+  margin-bottom: -.1rem;
 }
 
 .nav-profile-name a {
@@ -626,8 +626,8 @@ li {
 }
 
 .home {
-  width: 53%;
-  height: 750px;
+  width: 55%;
+  height: 650px;
   background-color: #2857b3;
   color: #fff;
   border-radius: 20px;
@@ -639,12 +639,12 @@ li {
   background-image: url(/assets/image/study-img.jpg);
   background-position: center;
   background-size: cover;
-  height: 750px;
+  height: 650px;
   border-radius: 20px;
 }
 
 .home img {
-  margin-top: 8rem;
+  margin-top: 4rem;
   margin-left: 60%;
   width: 20rem;
 }
@@ -657,7 +657,7 @@ li {
   font-style: normal;
   letter-spacing: normal;
   text-align: left;
-  margin-top: 8rem;
+  margin-top: 5rem;
 }
 
 .home-img {
@@ -696,6 +696,7 @@ li {
   position: relative;
   margin-top: 0rem;
   display: none;
+  margin-top: 6rem;
 }
 
 .step-item::after {
@@ -713,7 +714,7 @@ li {
 
 .step-item li {
   font-size: 1.8rem;
-  padding: 4rem 0;
+  padding: 2rem 0;
   padding-left: 5rem;
   font-weight: 500;
   font-stretch: normal;
@@ -985,8 +986,13 @@ footer {
 /* PLAYGROUND */
 .place-containerr {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-top: 10rem;
+  gap: 5rem;
+}
+
+.place-con.place-hide {
+  display: none;
 }
 
 .place-boxx {

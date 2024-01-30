@@ -20,8 +20,8 @@
     <header>
       <nav class="nav-section">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#" class="nav-link">Programs & Courses</a></li>
-          <li class="nav-item menu"><a href="#" class="nav-linkss">Study Destination
+          <li class="nav-item"><a href="findcourse2.html" class="nav-link">Programs & Courses</a></li>
+          <li class="nav-item menu" id="toggleSubMenu"><a href="#" class="nav-linkss">Study Destination
               <i class="fa-solid fa-caret-down"></i></a>
             <ul class="submenu">
               <li class="sublink"><a href="#help" class="submenu-link"><img src="assets/image/us-hdr.jpg" alt="">United
@@ -36,12 +36,13 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
+          <li class="nav-item"><a href="askgpt2.html" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="about.html#offer" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 
           <div class="buttons">
-            <a href="app" class="login">Free Consultation</a>
+            <a href="consultation.html" class="login">Free Consultation</a>
           </div>
         </ul>
 
@@ -143,7 +144,8 @@
                     </div>
                     <div class="completed-list-percent">
                       <h3>75%</h3>
-                      <a href="#">Track</a>
+                      <a href="#" class="edit">Edit</a>
+                      <a href="#" class="track">Track</a>
                     </div>
                   </div>
                   <div class="completed-list">
@@ -153,7 +155,8 @@
                     </div>
                     <div class="completed-list-percent">
                       <h3>55%</h3>
-                      <a href="#">Track</a>
+                      <a href="#" class="edit">Edit</a>
+                      <a href="#" class="track">Track</a>
                     </div>
                   </div>
                   <div class="completed-list">
@@ -163,7 +166,8 @@
                     </div>
                     <div class="completed-list-percent">
                       <h3>25%</h3>
-                      <a href="#">Track</a>
+                      <a href="#" class="edit">Edit</a>
+                      <a href="#" class="track">Track</a>
                     </div>
                   </div>
 
@@ -240,6 +244,7 @@
     const menu = document.querySelectorAll(".nav-link");
     const sublink = document.querySelectorAll('.sublink')
     const icon = document.querySelector("#menu-icon i");
+    const profileBtn = document.querySelector('.profile-btn')
 
     menu.forEach((element) => {
       element.addEventListener("click", () => {
@@ -269,6 +274,7 @@
     $(document).ready(function () {
       $('.profile-links a').on('click', function (e) {
         e.preventDefault();
+        profileBtn.style.display = 'block'
         $('.profile-links a').removeClass('active-profile');
         $(this).addClass('active-profile');
 
@@ -278,14 +284,13 @@
       });
     });
 
-
-
     // Handle click events on application links
     $('.application-type a').click(function (e) {
       e.preventDefault();
 
       // Remove 'active' class from all links
       $('.application-type a').removeClass('active');
+
 
       // Add 'active' class to the clicked link
       $(this).addClass('active');
@@ -295,6 +300,11 @@
 
       // Show the corresponding content div based on the data-target attribute
       $($(this).data('target')).show();
+    });
+
+    document.getElementById('toggleSubMenu').addEventListener('click', function () {
+      document.querySelector('.submenu').classList.toggle('active');
+      elements.style.paddingTop = '70px'
     });
 
   </script>

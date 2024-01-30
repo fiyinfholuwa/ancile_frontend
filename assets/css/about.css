@@ -130,7 +130,7 @@
 
 .success-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   border-top: 1px solid#080808;
   padding-top: 8rem;
 }
