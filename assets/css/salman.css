@@ -270,6 +270,30 @@
   .tips-step p {
     width: 100%;
   }
+
+  /* APPLICATION PAGE .............................................................................*/
+  .application-header-box {
+    margin: 8rem 4rem;
+  }
+
+  /* TRACKING PAGE .............................................................................*/
+  .track-contain {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 8rem;
+  }
+
+  .track-app-support h3 {
+    font-size: 2.5rem;
+  }
+
+  .track-tracking {
+    width: 100%;
+  }
+
+  .track-profile {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width:62.375em) {
@@ -320,6 +344,32 @@
   .resource-download a {
     padding: 1.4rem 4rem;
     font-size: 1.3rem;
+  }
+
+  /* APPLICATION PAGE .............................................................................*/
+  .first-input {
+    width: 40%;
+  }
+
+  .second-input {
+    width: 25%;
+  }
+
+  /* PROFILE3 PAGE .............................................................................*/
+  .completed-list-percent h3 {
+    margin-right: 5rem;
+  }
+
+  .completed-list-percent h3 {
+    font-size: 4rem;
+  }
+
+  .completed-list-percent a {
+    margin-right: 0;
+  }
+
+  .completed-list-percent a:not(:last-child) {
+    margin-right: 3rem !important;
   }
 }
 
@@ -516,7 +566,7 @@
   .success-box {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 4rem;
   }
 
@@ -612,6 +662,21 @@
 
   .bachelor p {
     width: 100%;
+  }
+
+  /* PROFILE PAGE .............................................................................*/
+  .information-fname {
+    width: 50%;
+  }
+
+
+  .information-lname {
+    width: 50%;
+  }
+
+  /* PROFILE3 PAGE .............................................................................*/
+  .completed-list {
+    flex-direction: column;
   }
 }
 
@@ -756,6 +821,35 @@
   .gpt-container h6 {
     font-size: 1.5rem;
   }
+
+  /* APPLICATION PAGE .............................................................................*/
+  .first-input {
+    width: 45%;
+  }
+
+  .second-input {
+    width: 45%;
+  }
+
+  label {
+    line-height: 2rem;
+  }
+
+  .file-label {
+    flex-wrap: wrap;
+  }
+
+  .application-header a {
+    font-size: 1.5rem;
+  }
+
+  .application-header h2 {
+    font-size: 3rem;
+  }
+
+  .application-header-box h3 {
+    line-height: 2.5rem;
+  }
 }
 
 @media only screen and (max-width:31.8125em) {
@@ -833,8 +927,85 @@
 
   /* FIND COURSE PAGE .............................................................................*/
 
-
   .find-course select {
     width: 65%;
+  }
+
+  /* APPLICATION PAGE .............................................................................*/
+  .personal {
+    flex-direction: column;
+  }
+
+  .first-input {
+    width: 100%;
+
+  }
+
+  .second-input {
+    width: 100%;
+  }
+
+  /* .iti input {
+    width: 100% !important;
+  } */
+
+  .last-btn {
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  /* PROFILE PAGE .............................................................................*/
+  .information-name {
+    flex-wrap: wrap;
+  }
+
+  .all-content-div h2,
+  .completed-content h2,
+  .cancel-content h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+
+  .profile-links,
+  .completed-list-percent {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .completed-list {
+    padding: 4rem 2rem;
+  }
+
+  /* TRACKING PAGE .............................................................................*/
+  .track li::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .track li:first-child::before {
+    font-size: 16px;
+  }
+
+  .track {
+    gap: 1rem;
+  }
+
+  .track::after {
+    width: calc(100% - 50px);
+  }
+
+  .track-contain {
+    padding: 5rem 2rem;
+  }
+
+  .track-app-support h3 {
+    font-size: 2.2rem;
+  }
+
+  .track-app-support {
+    flex-wrap: wrap;
+    gap: 3rem;
   }
 }

@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/shakur.css">
-    <link rel="stylesheet" href="assets/css/salman.css">
     <link rel="stylesheet" href="assets/css/msg.css">
     <link rel="stylesheet" href="assets/css/tracking.css">
+    <link rel="stylesheet" href="assets/css/shakur.css">
+    <link rel="stylesheet" href="assets/css/salman.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
@@ -18,8 +18,8 @@
     <header>
       <nav class="nav-section">
         <ul class="nav-list">
-          <li class="nav-item"><a href="#" class="nav-link">Programs & Courses</a></li>
-          <li class="nav-item menu"><a href="#" class="nav-linkss">Study Destination
+          <li class="nav-item"><a href="findcourse2.html" class="nav-link">Programs & Courses</a></li>
+          <li class="nav-item menu" id="toggleSubMenu"><a href="#" class="nav-linkss">Study Destination
               <i class="fa-solid fa-caret-down"></i></a>
             <ul class="submenu">
               <li class="sublink"><a href="#help" class="submenu-link"><img src="assets/image/us-hdr.jpg" alt="">United
@@ -34,12 +34,13 @@
               </li>
             </ul>
           </li>
-          <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
+          <li class="nav-item"><a href="askgpt2.html" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="about.html#offer" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 
           <div class="buttons">
-            <a href="app" class="login">Free Consultation</a>
+            <a href="consultation.html" class="login">Free Consultation</a>
           </div>
         </ul>
 
@@ -77,8 +78,14 @@
       </div>
     </header>
     <section>
-      <div class="msg-container">
-        <div class="msg-text">
+      <div class="track-app-support">
+        <h3>Application Tracking</h3>
+        <a href="#" class="track-link">
+          <img src="assets/image/support.svg" alt=""> <span>Contact Support</span>
+        </a>
+      </div>
+      <div class="msg-container track-contain">
+        <div class="msg-text track-tracking">
           <h4 class="id-head">Application ID: 23453423</h4>
           <ul class="track">
             <li>
@@ -99,14 +106,14 @@
             </li>
           </ul>
         </div>
-        <div class="msg-profile">
+        <div class="track-profile">
           <h4>Counsellor Assigned</h4>
           <img src="assets/image/img11.jpg" alt="" class="user-img">
           <h3>Nrupen Mandav</h3>
           <p>ASUF University</p>
 
-          <a href="#" class="pro-link">
-            <img src="assets/image/support.svg" alt=""> <span>Contact Support</span>
+          <a href="#" class="profile-link">
+            Message
           </a>
         </div>
       </div>
@@ -149,4 +156,42 @@
       </div>
     </footer>
   </body>
+  <script>
+
+    const header = document.querySelector(".nav-section");
+    const elements = document.querySelector(".nav-list");
+    const menu = document.querySelectorAll(".nav-link");
+    const sublink = document.querySelectorAll('.sublink')
+    const icon = document.querySelector("#menu-icon i");
+
+    menu.forEach((element) => {
+      element.addEventListener("click", () => {
+        elements.classList.toggle("active");
+        icon.classList.toggle("active");
+      });
+    });
+    sublink.forEach((element) => {
+      element.addEventListener("click", () => {
+        elements.classList.toggle("active");
+        icon.classList.toggle("active");
+      });
+    });
+
+    let searchBox = document.querySelector(".search-box .fa-solid.fa-magnifying-glass");
+    let search = document.querySelector('.nav-profile')
+    console.log(searchBox)
+    searchBox.addEventListener("click", () => {
+      search.classList.toggle("showInput");
+      if (search.classList.contains("showInput")) {
+        searchBox.classList.replace("fa-solid.fa-magnifying-glass", "fa-solid.fa-xmark");
+      } else {
+        searchBox.classList.replace("fa-solid.fa-xmark", "fa-solid.fa-magnifying-glass");
+      }
+    });
+
+    document.getElementById('toggleSubMenu').addEventListener('click', function () {
+      document.querySelector('.submenu').classList.toggle('active');
+      elements.style.paddingTop = '70px'
+    });
+  </script>
 </html>

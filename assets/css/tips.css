@@ -8,6 +8,17 @@
 
 .tips-banner {
   width: 70%;
+  border-radius: 5rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 90%;
+}
+
+.sticky+.tips-process {
+  padding-top: 102px;
 }
 
 .tips-download {

@@ -39,6 +39,7 @@
   letter-spacing: normal;
   text-align: left;
   color: #969696;
+  line-height: 2rem;
 }
 
 
@@ -166,6 +167,7 @@ input::placeholder {
 
 .browse-text {
   color: #4079e4;
+  line-height: 5rem;
 }
 
 .add-document {
