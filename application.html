@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/shakur.css">
-    <link rel="stylesheet" href="assets/css/salman.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
     <link rel="stylesheet" href="assets/css/application.css">
-
+    <link rel="stylesheet" href="assets/css/shakur.css">
+    <link rel="stylesheet" href="assets/css/salman.css">
     <script src="https://kit.fontawesome.com/c6614d5790.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <title>Academy Frontend</title>
@@ -262,6 +261,42 @@
       initialCountry: "ng", // "ng" is the ISO country code for Nigeria
     });
 
+
+    const header = document.querySelector(".nav-section");
+    const elements = document.querySelector(".nav-list");
+    const menu = document.querySelectorAll(".nav-link");
+    const sublink = document.querySelectorAll('.sublink')
+    const icon = document.querySelector("#menu-icon i");
+
+    menu.forEach((element) => {
+      element.addEventListener("click", () => {
+        elements.classList.toggle("active");
+        icon.classList.toggle("active");
+      });
+    });
+    sublink.forEach((element) => {
+      element.addEventListener("click", () => {
+        elements.classList.toggle("active");
+        icon.classList.toggle("active");
+      });
+    });
+
+    let searchBox = document.querySelector(".search-box .fa-solid.fa-magnifying-glass");
+    let search = document.querySelector('.nav-profile')
+    console.log(searchBox)
+    searchBox.addEventListener("click", () => {
+      search.classList.toggle("showInput");
+      if (search.classList.contains("showInput")) {
+        searchBox.classList.replace("fa-solid.fa-magnifying-glass", "fa-solid.fa-xmark");
+      } else {
+        searchBox.classList.replace("fa-solid.fa-xmark", "fa-solid.fa-magnifying-glass");
+      }
+    });
+
+    document.getElementById('toggleSubMenu').addEventListener('click', function () {
+      document.querySelector('.submenu').classList.toggle('active');
+      elements.style.paddingTop = '70px'
+    });
 
   </script>
 </html>
