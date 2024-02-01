@@ -48,6 +48,14 @@
     width: 15rem;
   } */
 
+  .msg-profile {
+    padding: 3rem;
+    width: 30%;
+  }
+
+  .msg-profile h4 {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width:75em) {
@@ -704,6 +712,16 @@
   .get-step h3 {
     margin-bottom: 1.5rem;
   }
+
+  /* MESSAGE PAGE .............................................................................*/
+  .msg-profile {
+    padding: 3rem 2rem;
+    width: 32%;
+  }
+
+  .pro-link {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width:43.6875em) {
@@ -880,6 +898,21 @@
   .get-right {
     width: 65%;
   }
+
+  /* MESSAGE PAGE .............................................................................*/
+  .msg-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .msg-text {
+    width: 100%;
+  }
+
+  .msg-profile {
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width:31.8125em) {
@@ -1046,5 +1079,13 @@
   .get-left h2 {
     font-size: 3rem;
     line-height: 2rem;
+  }
+
+  .msg-profile {
+    width: 70%;
+  }
+
+  .pro-link {
+    width: 90%;
   }
 }

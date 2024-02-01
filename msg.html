@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/msg.css">
     <link rel="stylesheet" href="assets/css/shakur.css">
     <link rel="stylesheet" href="assets/css/salman.css">
-    <link rel="stylesheet" href="assets/css/msg.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
@@ -79,27 +79,47 @@
     <section>
       <div class="msg-container">
         <div class="msg-text">
-
           <div class="msg-partner">
-            <h6>Today</h6>
-            <div class="msg-message">
-              <h5>Counsellor</h5>
-              <p>You’re welcome! And remember, if things don’t improve or if you need further support,
-                I’m here for you.</p>
+            <div class="message-flow">
+              <h6>Today</h6>
+              <div class="msg-message">
+                <h5>Counsellor</h5>
+                <p>You’re welcome! And remember, if things don’t improve or if you need further support,
+                  I’m here for you.</p>
+              </div>
+
+              <div class="msg-me">
+                <h5>Me</h5>
+                <p>Thank you. I’ll give these a try and see how it goes.</p>
+              </div>
+              <h6>Yesterday</h6>
+              <div class="msg-message">
+                <h5>Counsellor</h5>
+                <p>You’re welcome! And remember, if things don’t improve or if you need further support,
+                  I’m here for you.</p>
+              </div>
+
+              <div class="msg-me">
+                <h5>Me</h5>
+                <p>Thank you. I’ll give these a try and see how it goes.</p>
+              </div>
             </div>
-          </div>
-          <div class="msg-me">
-            <h5>Me</h5>
-            <p>Thank you. I’ll give these a try and see how it goes.</p>
           </div>
           <div class="msg-input">
             <textarea id="w3review" name="w3review" rows="10" cols="50">
            Enter your message
             </textarea>
             <div class="msg-btn">
-              <img src="assets/image/attachment.svg" alt="">
-              <a href="#">Send</a>
+              <label for="file-input">
+                <img src="assets/image/attachment.svg" alt="Attachment">
+              </label>
+              <form action="">
+                <input type="file" id="file-input" style="display: none;">
+              </form>
+
+              <a href="#" onclick="uploadFile()">Send</a>
             </div>
+
           </div>
         </div>
         <div class="msg-profile">
@@ -183,10 +203,12 @@
       }
     });
 
-    
-      document.getElementById('toggleSubMenu').addEventListener('click', function () {
-        document.querySelector('.submenu').classList.toggle('active');
-        elements.style.paddingTop = '70px'
-      });
+
+    document.getElementById('toggleSubMenu').addEventListener('click', function () {
+      document.querySelector('.submenu').classList.toggle('active');
+      elements.style.paddingTop = '70px'
+    });
+
+
   </script>
 </html>

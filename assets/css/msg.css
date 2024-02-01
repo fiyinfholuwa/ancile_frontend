@@ -77,6 +77,7 @@
 .msg-me {
   margin-top: 3rem;
   text-align: right;
+  margin-bottom: 4rem;
 }
 
 .msg-me h5 {
@@ -226,4 +227,28 @@
   color: #080808;
   margin-top: .5rem;
   display: inline-block;
+}
+
+.message-flow {
+  padding-right: 2rem;
+  overflow-y: scroll;
+  height: 250px;
+}
+
+
+.message-flow::-webkit-scrollbar {
+  width: 8px;
+}
+
+.message-flow::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+.message-flow::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+}
+
+#file-input {
+  color: red;
 }
