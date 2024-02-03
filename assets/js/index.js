@@ -79,3 +79,22 @@ document.addEventListener("DOMContentLoaded", function () {
 		initialCountry: "ng", // "ng" is the ISO country code for Nigeria
 	});
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+	// Fetch countries from the Restcountries API
+	fetch("https://restcountries.com/v3.1/all")
+		.then((response) => response.json())
+		.then((data) => {
+			// Get the select element
+			const countrySelect = document.getElementById("country");
+
+			// Populate the dropdown with countries
+			data.forEach((country) => {
+				const option = document.createElement("option");
+				option.value = country.name.common;
+				option.textContent = country.name.common;
+				countrySelect.appendChild(option);
+			});
+		})
+		.catch((error) => console.error("Error fetching countries:", error));
+});
