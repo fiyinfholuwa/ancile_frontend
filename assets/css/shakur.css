@@ -1051,6 +1051,8 @@ footer {
 
 #body {
   position: relative;
+  max-height: 100vh;
+  overflow-y: hidden;
 
 }
 
@@ -1062,7 +1064,7 @@ footer {
   width: 50%;
   background-color: #000000;
   padding: 3rem 3rem;
-  text-align: #fff;
+  text-align: left;
   z-index: 200000;
 }
 

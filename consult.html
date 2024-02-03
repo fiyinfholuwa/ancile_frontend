@@ -246,28 +246,32 @@
     const homeText = document.querySelector(".home-text");
     const stepItem = document.querySelector(".step-item");
 
-    switchBtn.addEventListener("click", function () {
-      if (event.target.id === "see")
-        event.preventDefault();
 
-      homeText.style.display = "none";
-      stepItem.style.display = "block";
-      start.style.display = 'inline-block';
-      see.style.display = 'none'
-    });
 
     document.getElementById('toggleSubMenu').addEventListener('click', function () {
       document.querySelector('.submenu').classList.toggle('active');
       elements.style.paddingTop = '70px'
     });
 
-    const exploreBtn = document.querySelector('.place-explore')
-    const con = document.querySelector('.place-con')
 
-    exploreBtn.addEventListener('click', function (e) {
-      e.preventDefault()
-      con.classList.remove('place-hide')
-      exploreBtn.style.display = 'none'
-    })
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // Fetch countries from the Restcountries API
+      fetch("https://restcountries.com/v3.1/all")
+        .then((response) => response.json())
+        .then((data) => {
+          // Get the select element
+          const countrySelect = document.getElementById("country");
+
+          // Populate the dropdown with countries
+          data.forEach((country) => {
+            const option = document.createElement("option");
+            option.value = country.name.common;
+            option.textContent = country.name.common;
+            countrySelect.appendChild(option);
+          });
+        })
+        .catch((error) => console.error("Error fetching countries:", error));
+    });
   </script>
 </html>
