@@ -363,12 +363,16 @@ a {
   padding-bottom: 18px;
 }
 
-.login .right form input {
+.login .right form input,
+.login .right form select {
   background-color: #0a0909;
   color: #ffffff;
 }
 
-.login .right form input::placeholder {
+
+
+.login .right form input::placeholder,
+.login .right form select::placeholder {
   color: #7e7e7e;
   font-size: 12px;
 }
@@ -407,6 +411,7 @@ a {
   border-radius: 15px;
   font-size: 12px;
   background-color: #f5c142;
+  border: none;
 }
 
 .login .right form #sign_up {

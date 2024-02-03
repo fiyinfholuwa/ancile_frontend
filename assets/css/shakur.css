@@ -1047,3 +1047,120 @@ footer {
   /* height: 90vh !important; */
   overflow-y: hidden;
 }
+
+
+#body {
+  position: relative;
+
+}
+
+#consult {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 50%;
+  background-color: #000000;
+  padding: 3rem 3rem;
+  text-align: #fff;
+  z-index: 200000;
+}
+
+
+
+.consult-head {
+  font-size: 2.6rem;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
+.consult-form {
+  margin-top: 4rem;
+}
+
+.consult-details {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+
+.consult-details input,
+.consult-select select {
+  width: 40%;
+  padding: 1rem;
+  background-color: transparent;
+  border-radius: 5px;
+  border: solid 0.5px #fff;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #7e7e7e;
+}
+
+.consult-select {
+  margin-bottom: 3rem;
+}
+
+.consult-select h4 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+}
+
+.consult-select select {
+  width: 43%;
+}
+
+.consult-form button {
+  border-radius: 50px;
+  background-color: #f5c142;
+  padding: 1rem 3rem;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+  display: inline-block;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.consult-parag {
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2rem;
+  letter-spacing: normal;
+  text-align: left;
+  color: #a7a7a7;
+}
+
+.consult-link {
+  text-align: right;
+  margin-left: 96%;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.consult-link i {
+  font-size: 3rem;
+  color: #fff;
+}
