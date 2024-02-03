@@ -415,6 +415,30 @@ li {
 
 .hero-img {
   width: 52%;
+  height: 600px;
+  background-image: url(../image/home-header.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+  animation: slides 18s 6s infinite;
+}
+
+@keyframes slides {
+  0% {
+    background: url(../image/home-header.png);
+    background-position: center;
+  }
+
+  50% {
+    background: url(../image/call-in.jpg);
+    background-position: center;
+  }
+
+
+  100% {
+    background: url(../image/home-header.png);
+    background-position: center;
+  }
 }
 
 
@@ -1051,6 +1075,8 @@ footer {
 
 #body {
   position: relative;
+  max-height: 100vh;
+  overflow-y: hidden;
 
 }
 
@@ -1062,7 +1088,7 @@ footer {
   width: 50%;
   background-color: #000000;
   padding: 3rem 3rem;
-  text-align: #fff;
+  text-align: left;
   z-index: 200000;
 }
 
@@ -1105,6 +1131,15 @@ footer {
   letter-spacing: normal;
   text-align: left;
   color: #7e7e7e;
+}
+
+/* .iti {
+  width: 40%;
+} */
+
+#phone {
+  width: 100%;
+  /* Adjust the width as needed */
 }
 
 .consult-select {
