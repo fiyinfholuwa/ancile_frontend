@@ -1109,6 +1109,15 @@ footer {
   color: #7e7e7e;
 }
 
+/* .iti {
+  width: 40%;
+} */
+
+#phone {
+  width: 100%;
+  /* Adjust the width as needed */
+}
+
 .consult-select {
   margin-bottom: 3rem;
 }
