@@ -252,3 +252,9 @@
 #file-input {
   color: red;
 }
+
+#file-name {
+  margin-top: 2rem;
+  line-height: 1.7rem;
+  display: inline-block;
+}
