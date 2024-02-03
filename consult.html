@@ -252,7 +252,11 @@
 
     document.getElementById('toggleSubMenu').addEventListener('click', function () {
       document.querySelector('.submenu').classList.toggle('active');
-      elements.style.paddingTop = '70px'
+      if (window.matchMedia("(max-width: 75em)").matches) {
+        elements.style.paddingTop = '70px';
+      } else {
+        elements.style.paddingTop = '0';
+      }
     });
 
 
@@ -276,14 +280,14 @@
         .catch((error) => console.error("Error fetching countries:", error));
     });
 
-     const input = document.querySelector("#phone");
-      window.intlTelInput(input, {
-        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
-      });
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+    });
 
-      const iti = window.intlTelInput(input, {
-        utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
-        initialCountry: "ng", // "ng" is the ISO country code for Nigeria
-      });
+    const iti = window.intlTelInput(input, {
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+      initialCountry: "ng", // "ng" is the ISO country code for Nigeria
+    });
   </script>
 </html>

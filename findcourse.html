@@ -198,10 +198,14 @@
         searchBox.classList.replace("fa-solid.fa-xmark", "fa-solid.fa-magnifying-glass");
       }
     });
-    document.getElementById('toggleSubMenu').addEventListener('click', function () {
-      document.querySelector('.submenu').classList.toggle('active');
-      elements.style.paddingTop = '70px'
-    });
+     document.getElementById('toggleSubMenu').addEventListener('click', function () {
+        document.querySelector('.submenu').classList.toggle('active');
+        if (window.matchMedia("(max-width: 75em)").matches) {
+          elements.style.paddingTop = '70px';
+        } else {
+          elements.style.paddingTop = '0';
+        }
+      });
 
 
   </script>

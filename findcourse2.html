@@ -236,8 +236,11 @@
 
     document.getElementById('toggleSubMenu').addEventListener('click', function () {
       document.querySelector('.submenu').classList.toggle('active');
-      elements.style.paddingTop = '70px'
+      if (window.matchMedia("(max-width: 75em)").matches) {
+        elements.style.paddingTop = '70px';
+      } else {
+        elements.style.paddingTop = '0';
+      }
     });
-
   </script>
 </html>

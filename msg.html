@@ -117,9 +117,9 @@
                 <input type="file" id="file-input" style="display: none;">
               </form>
 
-              <a href="#" onclick="uploadFile()">Send</a>
+              <a href="#">Send</a>
             </div>
-
+            <span id="file-name"></span>
           </div>
         </div>
         <div class="msg-profile">
@@ -206,9 +206,24 @@
 
     document.getElementById('toggleSubMenu').addEventListener('click', function () {
       document.querySelector('.submenu').classList.toggle('active');
-      elements.style.paddingTop = '70px'
+      if (window.matchMedia("(max-width: 75em)").matches) {
+        elements.style.paddingTop = '70px';
+      } else {
+        elements.style.paddingTop = '0';
+      }
     });
 
+    const fileInput = document.getElementById('file-input');
+    const fileNameDisplay = document.getElementById('file-name');
 
+    fileInput.addEventListener('change', function () {
+      const files = fileInput.files;
+
+      if (files.length > 0) {
+        fileNameDisplay.textContent = files[0].name;
+      } else {
+        fileNameDisplay.textContent = '';
+      }
+    });
   </script>
 </html>
