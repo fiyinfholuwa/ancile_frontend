@@ -801,7 +801,7 @@
 
   .home-image-box {
     width: 100%;
-    height: 700px;
+    /* height: 700px; */
   }
 
   .modal-body iframe {
@@ -958,9 +958,9 @@
     width: 100%;
   }
 
-  .home-image-box {
+  /* .home-image-box {
     height: 500px;
-  }
+  } */
 
   .hero h1 {
     margin-bottom: 2rem;
@@ -1123,7 +1123,7 @@
 
   .hero-img {
     width: 100%;
-    height: 550px;
+    /* height: 550px; */
     border-radius: 30px;
 
   }
