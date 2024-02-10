@@ -307,10 +307,16 @@ li {
 }
 
 .searchh {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   position: absolute;
-  right: 3rem;
+  right: 2rem;
+  top: 2rem;
   z-index: 20;
+  border: none;
+  background: #2f5dbd;
+  padding: .2rem .5rem;
+  color: #fff;
+  border-radius: 2px;
 }
 
 .nav-profile .iconn {
