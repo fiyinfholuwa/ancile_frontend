@@ -1159,4 +1159,32 @@
   .consult-form .loginGo {
     width: 40%;
   }
+
+  .search-box .input-box {
+    right: calc(100% - 100px);
+  }
+
+  .search-box .input-box input {
+    width: 90%;
+  }
+
+  .search-box .input-box {
+    width: 240px;
+  }
+
+  .searchh {
+    top: 2.5rem;
+  }
+
+  .search-box .input-box::before {
+    right: 60px;
+  }
+
+  .reg-button {
+    flex-wrap: wrap;
+  }
+
+  .reg-button p {
+    padding: 0;
+  }
 }
