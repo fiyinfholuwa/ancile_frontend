@@ -207,8 +207,9 @@ li {
   justify-content: space-between;
 }
 
-.second-nav img {
+.second-nav img a {
   width: 12%;
+  cursor: pointer;
 }
 
 .nav-profile {
@@ -257,6 +258,8 @@ li {
   transition: all 0.3s ease;
 }
 
+
+
 .search-box .input-box {
   position: absolute;
   right: calc(100% - 40px);
@@ -301,6 +304,13 @@ li {
   font-size: 16px;
   border: none;
   font-family: 'Epilogue', sans-serif;
+}
+
+.searchh {
+  font-size: 1.3rem;
+  position: absolute;
+  right: 3rem;
+  z-index: 20;
 }
 
 .nav-profile .iconn {
@@ -632,7 +642,7 @@ li {
   margin-top: 8rem;
 }
 
-.place-explore a {
+.place-explore button {
   display: inline-block;
 
   background-color: #000000;
@@ -1085,20 +1095,61 @@ footer {
 }
 
 #consult {
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   height: 100vh;
   width: 50%;
+
   background-color: #000000;
   padding: 3rem 3rem;
   text-align: left;
   z-index: 200000;
+  transition: all 300ms ease;
 }
 
+#consult.active {
+  right: 0;
+}
 
+#register {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 50%;
 
-.consult-head {
+  background-color: #000000;
+  padding: 3rem 3rem;
+  text-align: left;
+  z-index: 200000;
+  transition: all 300ms ease;
+}
+
+#register.active {
+  right: 0;
+}
+
+#login {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 50%;
+
+  background-color: #000000;
+  padding: 3rem 3rem;
+  text-align: left;
+  z-index: 200000;
+  transition: all 300ms ease;
+}
+
+#login.active {
+  right: 0;
+}
+
+.consult-head,
+.reg-head {
   font-size: 2.6rem;
   font-weight: 500;
   font-stretch: normal;
@@ -1109,11 +1160,16 @@ footer {
   color: #fff;
 }
 
+.reg-head {
+  margin-top: 5rem;
+}
+
 .consult-form {
   margin-top: 4rem;
 }
 
-.consult-details {
+.consult-details,
+.consult-password {
   display: flex;
   align-items: center;
   gap: 3rem;
@@ -1137,11 +1193,82 @@ footer {
   color: #7e7e7e;
 }
 
+.password-box input {
+  padding: 1rem;
+  background-color: transparent;
+  border-radius: 5px;
+  border: solid 0.5px #fff;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #7e7e7e;
+  width: 98%;
+
+}
+
+.password-box {
+  width: 40%;
+  position: relative;
+}
+
+.password-box .toggle-password1,
+.password-box .toggle-password2 {
+  position: absolute;
+  right: 2rem;
+  top: 2em;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.toggle-password {
+  position: absolute;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.2rem;
+  top: 2rem;
+  right: 15rem
+}
+
+.login-divv {
+  position: relative;
+}
+
+.login-div input {
+  width: 80%;
+  padding: 1rem;
+  background-color: transparent;
+  border-radius: 5px;
+  border: solid 0.5px #fff;
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #7e7e7e;
+}
+
+.login-div label {
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.login-div:not(:last-child) {
+  margin-bottom: 4rem;
+}
+
 /* .iti {
   width: 40%;
 } */
 
-#phone {
+#phone,
+#phone2 {
   width: 100%;
   /* Adjust the width as needed */
 }
@@ -1202,4 +1329,29 @@ footer {
 .consult-link i {
   font-size: 3rem;
   color: #fff;
+}
+
+
+
+.reg-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.reg-already p {
+  color: #fff;
+  padding: 1rem 3rem;
+  font-size: 1.5rem;
+}
+
+.forgot-p {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.consult-form .loginGo {
+  width: 30%;
+  text-align: center;
+  margin-top: 2rem;
 }
