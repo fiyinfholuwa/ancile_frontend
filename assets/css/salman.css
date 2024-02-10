@@ -228,9 +228,9 @@
     margin-top: 10rem;
   }
 
-  .second-nav img {
+  /* .second-nav img a{
     width: 15%;
-  }
+  } */
 
 
   /* ABOUT PAGE .............................................................................*/
@@ -313,6 +313,10 @@
 
   .get-right {
     width: 40%;
+  }
+
+  #register {
+    width: 70%;
   }
 }
 
@@ -734,11 +738,18 @@
   }
 
   /* CONSULTATION PAGE .............................................................................*/
-  #consult {
+  #consult,
+  #register,
+  #login {
     top: 8rem;
     width: 100%;
     z-index: 200;
   }
+
+  .toggle-password {
+    right: 19rem
+  }
+
 }
 
 @media only screen and (max-width:43.6875em) {
@@ -931,7 +942,8 @@
     width: 60%;
   }
 
-  .consult-details {
+  .consult-details,
+  .consult-password {
     flex-direction: column;
     align-items: start;
   }
@@ -939,6 +951,14 @@
   .consult-details input,
   .consult-select select {
     width: 70%;
+  }
+
+  .password-box {
+    width: 70%;
+  }
+
+  .toggle-password {
+    right: 15rem
   }
 }
 
@@ -1121,11 +1141,22 @@
     width: 100%;
   }
 
+  .password-box,
+  .login-div input {
+    width: 100%;
+  }
+
   .hero-img {
     width: 100%;
     /* height: 550px; */
     border-radius: 30px;
-
   }
 
+  .toggle-password {
+    right: 2rem
+  }
+
+  .consult-form .loginGo {
+    width: 40%;
+  }
 }

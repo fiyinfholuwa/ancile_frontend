@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="assets/css/shakur.css">
     <link rel="stylesheet" href="assets/css/salman.css">
     <script src="https://kit.fontawesome.com/c6614d5790.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
     <title>Academy Frontend</title>
   </head>
   <body>
@@ -49,7 +51,7 @@
         </div>
       </nav>
       <div class="second-nav third">
-        <img src="assets/image/AncileAcad-logo.svg" alt="">
+        <a href="index.html"><img src="assets/image/AncileAcad-logo.svg" alt=""></a>
         <div class="nav-profile">
           <i class="fa-solid fa-xmark iconn"></i>
           <div class="search-box">
@@ -64,7 +66,7 @@
               <img src="assets/image/img11.jpg" alt="" class="profile-img">
               <div class="nav-profile-name">
                 <h3>Tyler Nixon</h3>
-                <a href="#">Sign out</a>
+                <a href="#" class="sign-out">Sign out</a>
               </div>
             </div>
           </div>
@@ -191,6 +193,109 @@
         <p class="copy">2023 © Ancile Inc. All rights reserved.</p>
       </div>
     </footer>
+    <!-- consultation page............................ -->
+    <div id="consult">
+      <a href="#" class="consult-link"><i class="fa-solid fa-xmark"></i></a>
+      <h3 class="consult-head">START A FREE CONSULTATION</h3>
+      <form action="#" class="consult-form">
+        <div class="consult-details">
+          <input type="text" name="fname" id="fname" placeholder="First name">
+          <input type="text" name="lname" id="lname" placeholder="Last name">
+        </div>
+        <div class="consult-details">
+          <input type="email" name="email" id="email" placeholder="Email address">
+          <input type="tel" id="phone" type="tel" name="phone">
+        </div>
+        <div class="consult-select">
+          <h4>Your intending study destination</h4>
+          <select name="country" id="country">
+            <option value="Select Country" disabled>Select Country</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Ghana">Ghana</option>
+          </select>
+        </div>
+        <div class="consult-select">
+          <h4>What level of study are you planning for?</h4>
+          <select name="level" id="level">
+            <option value="Select Level" disabled>Select education level</option>
+            <option value="Nigeria">100level</option>
+            <option value="Ghana">200level</option>
+          </select>
+        </div>
+        <button type="submit">Submit Request</button>
+      </form>
+
+      <p class="consult-parag">As soon as your request is received, an expert will be assigned to see you through an
+        advice stage.
+        If need be a university counsellor will be in the process to guide you on right choices.</p>
+    </div>
+    <!-- Register............................ -->
+    <div id="register">
+      <a href="#" class="consult-link reg-link"><i class="fa-solid fa-xmark"></i></a>
+      <h3 class="reg-head">CREATE ACCOUNT</h3>
+      <form action="#" class="consult-form">
+        <div class="consult-details">
+          <input type="text" name="firstname" id="firstname" placeholder="Enter First Name">
+          <input type="text" name="lastname" id="lastname" placeholder="Enter Last Name">
+        </div>
+        <div class="consult-details">
+          <input type="email" name="mail" id="mail" placeholder="Enter Email Address">
+          <input type="tel" id="phone2" name="phone">
+        </div>
+        <div class="consult-password">
+          <div class="password-box">
+            <input type="password" name="password" id="passwordField1" placeholder="Enter Password">
+            <span class="toggle-password1" onclick="togglePasswordVisibility1()">
+              <i class="fa-solid fa-eye" id="eyeIcon1"></i>
+            </span>
+          </div>
+          <div class="password-box">
+            <input type="password" name="cpassword" id="passwordField2" placeholder="Confirm Password">
+
+            <span class="toggle-password2" onclick="togglePasswordVisibility2()">
+              <i class="fa-solid fa-eye" id="eyeIcon2"></i>
+            </span>
+          </div>
+        </div>
+        <div class="reg-button">
+          <button type="submit">Create Account</button>
+          <div class="reg-already">
+            <p>Already have an account? <span><a href="#" class="reg-login">Login</a></span></p>
+          </div>
+        </div>
+      </form>
+
+      <p class="consult-parag">By clicking, create account up you will be agreeing to our <a href="#">Terms &
+          Conditions</a> & <a href="#">Privacy
+          Policy</a></p>
+    </div>
+    <!-- Login............................ -->
+    <div id="login">
+      <a href="#" class="consult-link login-link"><i class="fa-solid fa-xmark"></i></a>
+      <h3 class="reg-head">LOGIN TO
+        YOUR ACCOUNT</h3>
+      <form action="#" class="consult-form">
+
+        <div class="login-div">
+          <label for="emaila">Email Address</label><br><br>
+          <input type="email" id="emaila" name="emaila" placeholder="Enter Email Address">
+        </div>
+
+        <div class="login-div">
+          <label for="passwordField">Password</label><br><br>
+          <div class="login-divv">
+            <input type="password" id="passwordField" name="passwordField" placeholder="Enter Password">
+            <span class="toggle-password" onclick="togglePasswordVisibility()">
+              <i class="fa-solid fa-eye" id="eyeIcon"></i>
+            </span>
+          </div>
+        </div>
+        <p class="forgot-p">Forgot password ? <span><a href="#">Reset</a></span></p>
+        <button type="submit" class="loginGo">Login</button>
+        <p class="forgot-p">Dont have account? <span><a href="#" class="login-reg">Sign Up</a></span></p>
+      </form>
+
+    </div>
     <script src=" https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -208,6 +313,7 @@
     const menu = document.querySelectorAll(".nav-link");
     const sublink = document.querySelectorAll('.sublink')
     const icon = document.querySelector("#menu-icon i");
+    const consultBtn = document.querySelector('.login')
 
     menu.forEach((element) => {
       element.addEventListener("click", () => {
@@ -222,6 +328,11 @@
       });
     });
 
+    consultBtn.addEventListener('click', (e) => {
+      e.preventDefault()
+      elements.classList.toggle("active");
+      icon.classList.toggle("active");
+    })
     let searchBox = document.querySelector(".search-box .fa-solid.fa-magnifying-glass");
     let search = document.querySelector('.nav-profile')
     console.log(searchBox)
@@ -242,5 +353,145 @@
         elements.style.paddingTop = '0';
       }
     });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // Fetch countries from the Restcountries API
+      fetch("https://restcountries.com/v3.1/all")
+        .then((response) => response.json())
+        .then((data) => {
+          // Get the select element
+          const countrySelect = document.getElementById("country");
+
+          // Populate the dropdown with countries
+          data.forEach((country) => {
+            const option = document.createElement("option");
+            option.value = country.name.common;
+            option.textContent = country.name.common;
+            countrySelect.appendChild(option);
+          });
+        })
+        .catch((error) => console.error("Error fetching countries:", error));
+    });
+
+
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+    });
+
+    const iti = window.intlTelInput(input, {
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+      initialCountry: "ng", // "ng" is the ISO country code for Nigeria
+    });
+    const input2 = document.querySelector("#phone2");
+    window.intlTelInput(input2, {
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+    });
+
+    const iti2 = window.intlTelInput(input2, {
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+      initialCountry: "ng", // "ng" is the ISO country code for Nigeria
+    });
+
+    // CONSULTATION LOGIC
+    const consult = document.getElementById('consult')
+    const closeConsult = document.querySelector('.consult-link')
+    consultBtn.addEventListener('click', (e) => {
+      e.preventDefault()
+      consult.classList.toggle('active');
+    })
+
+    closeConsult.addEventListener('click', (e) => {
+      e.preventDefault()
+      consult.classList.toggle('active')
+    })
+
+    // REGISTER LOGIC
+
+    const registerBox = document.getElementById('register')
+    const closeReg = document.querySelector('.reg-link')
+    const regLogin = document.querySelector('.reg-login')
+    const loginReg = document.querySelector('.login-reg')
+    const getStarted = document.querySelectorAll('.login2')
+    const signOut = document.querySelector('.sign-out')
+    closeReg.addEventListener('click', (e) => {
+      e.preventDefault()
+      registerBox.classList.toggle('active');
+    })
+    //LOGIN LOGIC
+    const loginBox = document.getElementById('login')
+    const closeLogin = document.querySelector('.login-link')
+    closeLogin.addEventListener('click', (e) => {
+      e.preventDefault()
+      loginBox.classList.toggle('active');
+    })
+
+    regLogin.addEventListener('click', (e) => {
+      e.preventDefault()
+      registerBox.classList.toggle('active');
+      loginBox.classList.toggle('active');
+    })
+    loginReg.addEventListener('click', (e) => {
+      e.preventDefault()
+      registerBox.classList.toggle('active');
+      loginBox.classList.toggle('active');
+    })
+    // getStarted.addEventListener('click', (e) => {
+    //   e.preventDefault()
+    //   registerBox.classList.toggle('active');
+    // })
+    getStarted.forEach((get) => {
+      get.addEventListener('click', (e) => {
+        e.preventDefault()
+        registerBox.classList.toggle('active');
+      })
+    })
+    signOut.addEventListener('click', (e) => {
+      e.preventDefault()
+      loginBox.classList.toggle('active')
+    })
+    function togglePasswordVisibility() {
+      var passwordField = document.getElementById("passwordField");
+      var eyeIcon = document.getElementById("eyeIcon");
+
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+      } else {
+        passwordField.type = "password";
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+      }
+    }
+
+    function togglePasswordVisibility1() {
+      const passwordField = document.getElementById("passwordField1");
+      const eyeIcon = document.getElementById("eyeIcon1");
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+      } else {
+        passwordField.type = "password";
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+      }
+    }
+
+    function togglePasswordVisibility2() {
+      const passwordField = document.getElementById("passwordField2");
+      const eyeIcon = document.getElementById("eyeIcon2");
+
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+      } else {
+        passwordField.type = "password";
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+      }
+    }
   </script>
 </html>
