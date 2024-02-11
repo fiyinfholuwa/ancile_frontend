@@ -42,7 +42,7 @@
           <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 
           <div class="buttons">
-            <a href="consultation.html" class="login">Free Consultation</a>
+            <a href="#" class="login" onclick="toggleModal(event)">Free Consultation</a>
           </div>
         </ul>
 
@@ -130,8 +130,6 @@
     </section>
 
 
-
-
     <!-- CONSULTATION -------------------------------------------------------- -->
     <div id="consult">
       <a href="index.html" class="consult-link"><i class="fa-solid fa-xmark"></i></a>
@@ -168,8 +166,17 @@
         advice stage.
         If need be a university counsellor will be in the process to guide you on right choices.</p>
     </div>
-
-
+    <!-- CUSTOM MODAL-------------------------------------------------------- -->
+    <div class="modale hidden">
+      <button class="close" onclick="closeModal(event)">&times;</button>
+      <h1 class="headinge"><i class="fa-solid fa-circle-check"></i></h1>
+      <p class="modale-text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ipsa autem
+        eligendi, est, culpa similique dignissimos sed, officia omnis iusto id?
+        Fuga aperiam nemo voluptates nulla voluptatem iusto vero quo!
+      </p>
+    </div>
+    <div class="overlay hidden" onclick="closeModal(event)"></div>
 
 
 
@@ -258,5 +265,20 @@
       utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
       initialCountry: "ng", // "ng" is the ISO country code for Nigeria
     });
+
+    // CUSTOM MODAL
+    const modale = document.querySelector('.modale')
+    const overlay = document.querySelector('.overlay')
+    function toggleModal(e) {
+      e.preventDefault()
+      modale.classList.toggle("hidden");
+      overlay.classList.toggle('hidden');
+    }
+
+    function closeModal(e) {
+      e.preventDefault()
+      modale.classList.toggle("hidden");
+      overlay.classList.toggle('hidden');
+    }
   </script>
 </html>
