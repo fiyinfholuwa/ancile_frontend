@@ -46,7 +46,7 @@
           <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 
           <div class="buttons">
-            <a href="#" class="login">Free Consultation</a>
+            <a href="#" class="login" onclick="toggleConsult(event)">Free Consultation</a>
           </div>
         </ul>
 
@@ -72,8 +72,8 @@
             </div>
           </div>
           <div class="nav-auth">
-            <a href="#" id="registered">SIGN UP</a>
-            <a href="#" id="logged">LOGIN</a>
+            <a href="#" id="registered" onclick="toggleRegister(event)">SIGN UP</a>
+            <a href="#" id="logged" onclick="toggleLogin(event)">LOGIN</a>
           </div>
         </div>
       </div>
@@ -108,7 +108,7 @@
                 <h1>Explore Boundless Horizons</h1>
                 <p>Your Gateway to Global Education Opportunities</p>
                 <div class="hero-buttons">
-                  <a href="#" class="login2">Get Started</a>
+                  <a href="#" class="login2" onclick="toggleRegister(event)">Get Started</a>
                 </div>
               </div>
               <div class="hero-img">
@@ -123,7 +123,7 @@
                 <h1>Discover Limitless Horizons</h1>
                 <p>Your Gateway to Global Education Opportunities</p>
                 <div class="hero-buttons">
-                  <a href="#" class="login2">Get Started</a>
+                  <a href="#" class="login2" onclick="toggleRegister(event)">Get Started</a>
                 </div>
               </div>
               <div class="hero-img">
@@ -506,7 +506,7 @@
 
     <!-- consultation page............................ -->
     <div id="consult">
-      <a href="#" class="consult-link"><i class="fa-solid fa-xmark"></i></a>
+      <a href="#" class="consult-link" onclick="closedConsult(event)"><i class="fa-solid fa-xmark"></i></a>
       <h3 class="consult-head">START A FREE CONSULTATION</h3>
       <form action="#" class="consult-form">
         <div class="consult-details">
@@ -542,7 +542,7 @@
     </div>
     <!-- Register............................ -->
     <div id="register">
-      <a href="#" class="consult-link reg-link"><i class="fa-solid fa-xmark"></i></a>
+      <a href="#" class="consult-link reg-link" onclick="closedReg(event)"><i class="fa-solid fa-xmark"></i></a>
       <h3 class="reg-head">CREATE ACCOUNT</h3>
       <form action="#" class="consult-form">
         <div class="consult-details">
@@ -571,7 +571,8 @@
         <div class="reg-button">
           <button type="submit">Create Account</button>
           <div class="reg-already">
-            <p>Already have an account? <span><a href="#" class="reg-login">Login</a></span></p>
+            <p>Already have an account? <span><a href="#" class="reg-login" onclick="regToLogin(event)">Login</a></span>
+            </p>
           </div>
         </div>
       </form>
@@ -582,7 +583,7 @@
     </div>
     <!-- Login............................ -->
     <div id="login">
-      <a href="#" class="consult-link login-link"><i class="fa-solid fa-xmark"></i></a>
+      <a href="#" class="consult-link login-link" onclick="closedLogin(event)"><i class="fa-solid fa-xmark"></i></a>
       <h3 class="reg-head">LOGIN TO
         YOUR ACCOUNT</h3>
       <form action="#" class="consult-form">
@@ -604,7 +605,8 @@
         </div>
         <p class="forgot-p">Forgot password ? <span><a href="#">Reset</a></span></p>
         <button type="submit" class="loginGo">Login</button>
-        <p class="forgot-p">Dont have account? <span><a href="#" class="login-reg">Sign Up</a></span></p>
+        <p class="forgot-p">Dont have account? <span><a href="#" class="login-reg" onclick="loginToReg(event)">Sign
+              Up</a></span></p>
       </form>
 
     </div>
@@ -778,16 +780,23 @@
     // CONSULTATION LOGIC
     const consult = document.getElementById('consult')
     const closeConsult = document.querySelector('.consult-link')
-    consultBtn.addEventListener('click', (e) => {
+    // consultBtn.addEventListener('click', (e) => {
+    //   e.preventDefault()
+    //   consult.classList.toggle('active');
+    // })
+
+    // closeConsult.addEventListener('click', (e) => {
+    //   e.preventDefault()
+    //   consult.classList.toggle('active')
+    // })
+    function toggleConsult(e) {
       e.preventDefault()
       consult.classList.toggle('active');
-    })
-
-    closeConsult.addEventListener('click', (e) => {
+    }
+    function closedConsult(e) {
       e.preventDefault()
       consult.classList.toggle('active')
-    })
-
+    }
     // REGISTER LOGIC
     const registerBtn = document.getElementById('registered')
     const registerBox = document.getElementById('register')
@@ -795,47 +804,80 @@
     const regLogin = document.querySelector('.reg-login')
     const loginReg = document.querySelector('.login-reg')
     const getStarted = document.querySelectorAll('.login2')
-    registerBtn.addEventListener('click', (e) => {
+    // registerBtn.addEventListener('click', (e) => {
+    //   e.preventDefault()
+    //   registerBox.classList.toggle('active');
+    // })
+    // closeReg.addEventListener('click', (e) => {
+    //   e.preventDefault()
+    //   registerBox.classList.toggle('active');
+    // })
+
+    function toggleRegister(e) {
       e.preventDefault()
       registerBox.classList.toggle('active');
-    })
-    closeReg.addEventListener('click', (e) => {
+    }
+
+    function closedReg(e) {
       e.preventDefault()
       registerBox.classList.toggle('active');
-    })
+    }
     //LOGIN LOGIC
     const loginBtn = document.getElementById('logged')
     const loginBox = document.getElementById('login')
     const closeLogin = document.querySelector('.login-link')
-    loginBtn.addEventListener('click', (e) => {
-      e.preventDefault()
-      loginBox.classList.toggle('active');
-    })
-    closeLogin.addEventListener('click', (e) => {
-      e.preventDefault()
-      loginBox.classList.toggle('active');
-    })
+    // loginBtn.addEventListener('click', (e) => {
+    //   e.preventDefault()
+    //   loginBox.classList.toggle('active');
+    // })
 
-    regLogin.addEventListener('click', (e) => {
+    function toggleLogin(e) {
+      e.preventDefault()
+      loginBox.classList.toggle('active');
+    }
+    // closeLogin.addEventListener('click', (e) => {
+    //   e.preventDefault()
+    //   loginBox.classList.toggle('active');
+    // })
+
+    function closedLogin(e) {
+      e.preventDefault()
+      loginBox.classList.toggle('active');
+    }
+
+    // regLogin.addEventListener('click', (e) => {
+    //   e.preventDefault()
+    //   registerBox.classList.toggle('active');
+    //   loginBox.classList.toggle('active');
+    // })
+
+    function regToLogin(e) {
       e.preventDefault()
       registerBox.classList.toggle('active');
       loginBox.classList.toggle('active');
-    })
-    loginReg.addEventListener('click', (e) => {
+    }
+    // loginReg.addEventListener('click', (e) => {
+    //   e.preventDefault()
+    //   registerBox.classList.toggle('active');
+    //   loginBox.classList.toggle('active');
+    // })
+
+    function loginToReg(e) {
       e.preventDefault()
       registerBox.classList.toggle('active');
       loginBox.classList.toggle('active');
-    })
+    }
+
     // getStarted.addEventListener('click', (e) => {
     //   e.preventDefault()
     //   registerBox.classList.toggle('active');
     // })
-    getStarted.forEach((get) => {
-      get.addEventListener('click', (e) => {
-        e.preventDefault()
-        registerBox.classList.toggle('active');
-      })
-    })
+    // getStarted.forEach((get) => {
+    //   get.addEventListener('click', (e) => {
+    //     e.preventDefault()
+    //     registerBox.classList.toggle('active');
+    //   })
+    // })
 
     function togglePasswordVisibility() {
       var passwordField = document.getElementById("passwordField");
@@ -872,7 +914,7 @@
 
       if (passwordField.type === "password") {
         passwordField.type = "text";
-        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.remove("fa-eye"); toggle
         eyeIcon.classList.add("fa-eye-slash");
       } else {
         passwordField.type = "password";
