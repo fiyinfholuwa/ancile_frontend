@@ -41,6 +41,41 @@ a {
   border: none;
 }
 
+.modal-head {
+  margin-bottom: 3rem;
+}
+
+.modd {
+  background-color: #000 !important;
+  padding: 2rem;
+  color: #fff;
+}
+
+.edit-name {
+  font-size: 2rem;
+}
+
+.label-name {
+  font-size: 1.5rem;
+}
+
+.mb-3:not(:last-child) {
+  margin-bottom: 2rem !important;
+}
+
+.edit-input {
+  padding: 1.8rem 1rem !important;
+  font-size: 1.5rem;
+}
+
+.edit-input::placeholder {
+  font-size: 1.4rem;
+}
+
+.save-change {
+  font-size: 1.5rem !important;
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -833,7 +868,11 @@ li {
   padding: 0;
   width: 150%;
   margin-left: -20%;
+}
 
+.modal-body2 {
+  width: 100% !important;
+  margin-left: 0 !important;
 }
 
 .testimonial {
