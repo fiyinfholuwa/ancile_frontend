@@ -195,8 +195,12 @@
     max-height: 50%;
   }
 
+  .carrd li a {
+    width: 30%;
+  }
+
   .carrd {
-    display: none;
+    display: block;
   }
 
   .carrd-head:hover+.carrd {
