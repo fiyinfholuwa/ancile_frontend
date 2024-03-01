@@ -77,6 +77,7 @@ a {
 }
 
 nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -175,6 +176,10 @@ nav {
   font-size: 2.3rem;
 }
 
+ul {
+  padding-left: 0 !important;
+}
+
 li {
   list-style: none;
 }
@@ -191,10 +196,12 @@ li {
 
 .nav-item {
   margin-right: 5rem;
+  line-height: 7rem;
 }
 
 .nav-link,
-.nav-linkss {
+.nav-linkss,
+.nav-linked {
   color: #fff;
   font-size: 14px;
   font-style: normal;
@@ -1458,4 +1465,48 @@ footer {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(1px);
   z-index: 5;
+}
+
+
+/* !-- CARD FOR THE LIST OF COUNTRIES MENU LIST ................... */
+.menu-cardd {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #3333333e;
+  width: 100%;
+  position: absolute;
+  z-index: 20;
+  left: 0rem;
+  top: 8rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 7rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+
+
+.menu-cardd h2 {
+  font-size: 1.5rem !important;
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+.carrd li a {
+  color: #000;
+  font-size: 1.3rem;
+}
+
+.carrd li {
+  margin-bottom: 2rem;
+}
+
+.country:hover+.menu-cardd,
+.menu-cardd:hover {
+  opacity: 1;
+  pointer-events: auto;
 }

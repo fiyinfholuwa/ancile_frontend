@@ -163,6 +163,45 @@
     color: #fff;
     margin-right: 50%;
   }
+
+  /* CARD FOR SUBMENU OR MENU ..............................*/
+
+  .nav-item {
+    line-height: normal;
+  }
+
+  /* .country {
+    margin-bottom: -1rem !important;
+  } */
+
+  .menu-cardd {
+    flex-direction: column;
+    gap: 3rem;
+    /* position: relative; */
+    overflow: scroll;
+    height: 0;
+    opacity: 0;
+  }
+
+
+
+  .menu-cardd li {
+    padding-left: 0 !important;
+  }
+
+  .country:hover+.menu-cardd,
+  .menu-cardd:hover {
+    height: auto;
+    max-height: 50%;
+  }
+
+  .carrd {
+    display: none;
+  }
+
+  .carrd-head:hover+.carrd {
+    display: block;
+  }
 }
 
 @media only screen and (max-width:69.0625em) {
