@@ -200,7 +200,7 @@
   }
 
   .carrd {
-    display: block;
+    display: none;
   }
 
   .carrd-head:hover+.carrd {
