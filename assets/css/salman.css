@@ -56,6 +56,11 @@
   .msg-profile h4 {
     text-align: center;
   }
+
+  .hero-bag,
+  .toe-container {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width:75em) {
@@ -205,6 +210,31 @@
 
   .carrd-head:hover+.carrd {
     display: block;
+  }
+
+  .tutorial-set,
+  .ins {
+    position: relative;
+    margin-top: 2rem;
+    top: 0;
+    background-color: transparent;
+    display: none;
+    margin-bottom: 1rem;
+  }
+
+  .ins li,
+  .tutorial-set li {
+    padding-left: 0;
+  }
+
+  .ins li a {
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+
+  .tutorial-set li a,
+  .ins li a {
+    color: #fff;
   }
 }
 
@@ -438,6 +468,11 @@
 
   .completed-list-percent a:not(:last-child) {
     margin-right: 3rem !important;
+  }
+
+  .hero-bag,
+  .toe-container {
+    width: 60%;
   }
 }
 
@@ -793,6 +828,23 @@
     right: 19rem
   }
 
+  .hero-container {
+    padding-right: 3rem;
+  }
+
+  .tutorial-container {
+    flex-direction: column;
+
+  }
+
+  .tutorial-text {
+    width: 100%;
+  }
+
+  .hero-bag,
+  .toe-container {
+    width: 70%;
+  }
 }
 
 @media only screen and (max-width:43.6875em) {
@@ -1002,6 +1054,15 @@
 
   .toggle-password {
     right: 15rem
+  }
+
+  .hero-bag,
+  .toe-container {
+    width: 80%;
+  }
+
+  .hero-container {
+    padding-left: 3rem;
   }
 }
 
@@ -1229,5 +1290,10 @@
 
   .reg-button p {
     padding: 0;
+  }
+
+  .hero-bag,
+  .toe-container {
+    width: 90%;
   }
 }
