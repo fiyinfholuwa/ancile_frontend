@@ -1,5 +1,5 @@
 .hero-container {
-  background-image: url(/assets/image/about-img.jpg);
+  background-image: url(/assets/image/acad-header.png);
   background-position: center;
   background-size: cover;
   padding: 10rem;
@@ -38,7 +38,7 @@
 
 .tutorial-footer {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -62,7 +62,7 @@
 .tutorial-text {
   width: 50%;
   border-radius: 46.5px;
-  padding: 10rem 3rem;
+  padding: 10rem 5rem;
 }
 
 .tutorial-text img {
@@ -96,4 +96,25 @@
   padding: 1.5rem 4rem;
   font-size: 1.2rem;
   margin-top: 3rem;
+}
+
+/* TESTING/////// */
+.tutor-imggs,
+.tutor-imggs2,
+.tutor-imggs3 {
+  background-image: url(/assets/image/gre-img.png);
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+  width: 35%;
+  border-radius: 30px;
+}
+
+.tutor-imggs2 {
+  background-image: url(/assets/image/sat-img.png);
+}
+
+
+.tutor-imggs3 {
+  background-image: url(/assets/image/gmat-img.png);
 }
