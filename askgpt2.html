@@ -52,7 +52,7 @@
         </div>
       </nav>
       <div class="second-nav third">
-      <a href="index.html"><img src="assets/image/AncileAcad-logo.svg" alt=""></a>
+        <a href="index.html"><img src="assets/image/AncileAcad-logo.svg" alt=""></a>
         <div class="nav-profile">
           <i class="fa-solid fa-xmark iconn"></i>
           <div class="search-box">
@@ -86,14 +86,17 @@
       <div class="ask-list">
         <div class="gpt-container">
           <a href="#">
+            <div class="trying"></div>
             <img src="assets/image/get-s.svg" />
             <h6>Getting Started</h6>
           </a>
           <a href="#">
+            <div class="trying"></div>
             <img src="assets/image/benefit.svg" />
             <h6>Benefits</h6>
           </a>
           <a href="#">
+            <div class="trying"></div>
             <img src="assets/image/reqr.svg" />
             <h6>Requirements</h6>
           </a>
@@ -101,14 +104,17 @@
 
         <div class="gpt-container">
           <a href="#">
+            <div class="trying"></div>
             <img src="assets/image/elig.svg" />
             <h6>Eligibility</h6>
           </a>
           <a href="#">
+            <div class="trying"></div>
             <img src="assets/image/work-study.svg" />
             <h6>Work & Study</h6>
           </a>
           <a href="#">
+            <div class="trying"></div>
             <img src="assets/image/comm.svg" />
             <h6>Communication</h6>
           </a>
@@ -288,11 +294,11 @@
         icon.classList.toggle("active");
       });
     });
-  consultBtn.addEventListener('click', (e) => {
-    e.preventDefault()
-    elements.classList.toggle("active");
-    icon.classList.toggle("active");
-  })
+    consultBtn.addEventListener('click', (e) => {
+      e.preventDefault()
+      elements.classList.toggle("active");
+      icon.classList.toggle("active");
+    })
     let searchBox = document.querySelector(".search-box .fa-solid.fa-magnifying-glass");
     let search = document.querySelector('.nav-profile')
     console.log(searchBox)
@@ -312,145 +318,145 @@
         elements.style.paddingTop = '0';
       }
     });
-  document.addEventListener("DOMContentLoaded", function () {
-    // Fetch countries from the Restcountries API
-    fetch("https://restcountries.com/v3.1/all")
-      .then((response) => response.json())
-      .then((data) => {
-        // Get the select element
-        const countrySelect = document.getElementById("country");
+    document.addEventListener("DOMContentLoaded", function () {
+      // Fetch countries from the Restcountries API
+      fetch("https://restcountries.com/v3.1/all")
+        .then((response) => response.json())
+        .then((data) => {
+          // Get the select element
+          const countrySelect = document.getElementById("country");
 
-        // Populate the dropdown with countries
-        data.forEach((country) => {
-          const option = document.createElement("option");
-          option.value = country.name.common;
-          option.textContent = country.name.common;
-          countrySelect.appendChild(option);
-        });
-      })
-      .catch((error) => console.error("Error fetching countries:", error));
-  });
+          // Populate the dropdown with countries
+          data.forEach((country) => {
+            const option = document.createElement("option");
+            option.value = country.name.common;
+            option.textContent = country.name.common;
+            countrySelect.appendChild(option);
+          });
+        })
+        .catch((error) => console.error("Error fetching countries:", error));
+    });
 
 
-  const input = document.querySelector("#phone");
-  window.intlTelInput(input, {
-    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
-  });
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+    });
 
-  const iti = window.intlTelInput(input, {
-    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
-    initialCountry: "ng", // "ng" is the ISO country code for Nigeria
-  });
-  const input2 = document.querySelector("#phone2");
-  window.intlTelInput(input2, {
-    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
-  });
+    const iti = window.intlTelInput(input, {
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+      initialCountry: "ng", // "ng" is the ISO country code for Nigeria
+    });
+    const input2 = document.querySelector("#phone2");
+    window.intlTelInput(input2, {
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+    });
 
-  const iti2 = window.intlTelInput(input2, {
-    utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
-    initialCountry: "ng", // "ng" is the ISO country code for Nigeria
-  });
+    const iti2 = window.intlTelInput(input2, {
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+      initialCountry: "ng", // "ng" is the ISO country code for Nigeria
+    });
 
-  // CONSULTATION LOGIC
-  const consult = document.getElementById('consult')
-  const closeConsult = document.querySelector('.consult-link')
-  consultBtn.addEventListener('click', (e) => {
-    e.preventDefault()
-    consult.classList.toggle('active');
-  })
+    // CONSULTATION LOGIC
+    const consult = document.getElementById('consult')
+    const closeConsult = document.querySelector('.consult-link')
+    consultBtn.addEventListener('click', (e) => {
+      e.preventDefault()
+      consult.classList.toggle('active');
+    })
 
-  closeConsult.addEventListener('click', (e) => {
-    e.preventDefault()
-    consult.classList.toggle('active')
-  })
+    closeConsult.addEventListener('click', (e) => {
+      e.preventDefault()
+      consult.classList.toggle('active')
+    })
 
-  // REGISTER LOGIC
+    // REGISTER LOGIC
 
-  const registerBox = document.getElementById('register')
-  const closeReg = document.querySelector('.reg-link')
-  const regLogin = document.querySelector('.reg-login')
-  const loginReg = document.querySelector('.login-reg')
-  const getStarted = document.querySelectorAll('.login2')
-  const signOut = document.querySelector('.sign-out')
-  closeReg.addEventListener('click', (e) => {
-    e.preventDefault()
-    registerBox.classList.toggle('active');
-  })
-  //LOGIN LOGIC
-  const loginBox = document.getElementById('login')
-  const closeLogin = document.querySelector('.login-link')
-  closeLogin.addEventListener('click', (e) => {
-    e.preventDefault()
-    loginBox.classList.toggle('active');
-  })
-
-  regLogin.addEventListener('click', (e) => {
-    e.preventDefault()
-    registerBox.classList.toggle('active');
-    loginBox.classList.toggle('active');
-  })
-  loginReg.addEventListener('click', (e) => {
-    e.preventDefault()
-    registerBox.classList.toggle('active');
-    loginBox.classList.toggle('active');
-  })
-  // getStarted.addEventListener('click', (e) => {
-  //   e.preventDefault()
-  //   registerBox.classList.toggle('active');
-  // })
-  getStarted.forEach((get) => {
-    get.addEventListener('click', (e) => {
+    const registerBox = document.getElementById('register')
+    const closeReg = document.querySelector('.reg-link')
+    const regLogin = document.querySelector('.reg-login')
+    const loginReg = document.querySelector('.login-reg')
+    const getStarted = document.querySelectorAll('.login2')
+    const signOut = document.querySelector('.sign-out')
+    closeReg.addEventListener('click', (e) => {
       e.preventDefault()
       registerBox.classList.toggle('active');
     })
-  })
-  signOut.addEventListener('click', (e) => {
-    e.preventDefault()
-    loginBox.classList.toggle('active')
-  })
-  function togglePasswordVisibility() {
-    var passwordField = document.getElementById("passwordField");
-    var eyeIcon = document.getElementById("eyeIcon");
+    //LOGIN LOGIC
+    const loginBox = document.getElementById('login')
+    const closeLogin = document.querySelector('.login-link')
+    closeLogin.addEventListener('click', (e) => {
+      e.preventDefault()
+      loginBox.classList.toggle('active');
+    })
 
-    if (passwordField.type === "password") {
-      passwordField.type = "text";
-      eyeIcon.classList.remove("fa-eye");
-      eyeIcon.classList.add("fa-eye-slash");
-    } else {
-      passwordField.type = "password";
-      eyeIcon.classList.remove("fa-eye-slash");
-      eyeIcon.classList.add("fa-eye");
+    regLogin.addEventListener('click', (e) => {
+      e.preventDefault()
+      registerBox.classList.toggle('active');
+      loginBox.classList.toggle('active');
+    })
+    loginReg.addEventListener('click', (e) => {
+      e.preventDefault()
+      registerBox.classList.toggle('active');
+      loginBox.classList.toggle('active');
+    })
+    // getStarted.addEventListener('click', (e) => {
+    //   e.preventDefault()
+    //   registerBox.classList.toggle('active');
+    // })
+    getStarted.forEach((get) => {
+      get.addEventListener('click', (e) => {
+        e.preventDefault()
+        registerBox.classList.toggle('active');
+      })
+    })
+    signOut.addEventListener('click', (e) => {
+      e.preventDefault()
+      loginBox.classList.toggle('active')
+    })
+    function togglePasswordVisibility() {
+      var passwordField = document.getElementById("passwordField");
+      var eyeIcon = document.getElementById("eyeIcon");
+
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+      } else {
+        passwordField.type = "password";
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+      }
     }
-  }
 
-  function togglePasswordVisibility1() {
-    const passwordField = document.getElementById("passwordField1");
-    const eyeIcon = document.getElementById("eyeIcon1");
-    if (passwordField.type === "password") {
-      passwordField.type = "text";
-      eyeIcon.classList.remove("fa-eye");
-      eyeIcon.classList.add("fa-eye-slash");
-    } else {
-      passwordField.type = "password";
-      eyeIcon.classList.remove("fa-eye-slash");
-      eyeIcon.classList.add("fa-eye");
+    function togglePasswordVisibility1() {
+      const passwordField = document.getElementById("passwordField1");
+      const eyeIcon = document.getElementById("eyeIcon1");
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+      } else {
+        passwordField.type = "password";
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+      }
     }
-  }
 
-  function togglePasswordVisibility2() {
-    const passwordField = document.getElementById("passwordField2");
-    const eyeIcon = document.getElementById("eyeIcon2");
+    function togglePasswordVisibility2() {
+      const passwordField = document.getElementById("passwordField2");
+      const eyeIcon = document.getElementById("eyeIcon2");
 
-    if (passwordField.type === "password") {
-      passwordField.type = "text";
-      eyeIcon.classList.remove("fa-eye");
-      eyeIcon.classList.add("fa-eye-slash");
-    } else {
-      passwordField.type = "password";
-      eyeIcon.classList.remove("fa-eye-slash");
-      eyeIcon.classList.add("fa-eye");
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        eyeIcon.classList.remove("fa-eye");
+        eyeIcon.classList.add("fa-eye-slash");
+      } else {
+        passwordField.type = "password";
+        eyeIcon.classList.remove("fa-eye-slash");
+        eyeIcon.classList.add("fa-eye");
+      }
     }
-  }
 
   </script>
 </html>
